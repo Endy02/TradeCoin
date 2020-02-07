@@ -13,7 +13,7 @@
 <header>
     <nav class="sidebar-left">
         <div class="logo">
-            <img src="src/img/logo_blanc.png" alt="Logo">
+            <img src="./public/img/logo_blanc.png" alt="Logo">
         </div>
         <ul>
             <a class="a-nav" href="#Dashboard">Dashboard</a>
@@ -27,7 +27,7 @@
     </nav>
     <nav class="sidebar-right">
         <div class="logo">
-            <img src="Apple_logo_grey.svg" alt="Logo">
+            <img src="./public/img/logo_blanc.png" alt="Logo">
         </div>
         <ul>
             <a class="a-nav" href="#Dashboard"><i class="far fa-file-alt"></i></a>
