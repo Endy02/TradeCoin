@@ -12,23 +12,23 @@ Ce rendre dans le dossier tradcoin une fois cloner, puis lancer la commande dock
 >docker-compose up -d 
 
 
-## Arborecense
+## 2. Arborecense
 
->Tradcoin
->|
->|_db_data
->|
->|_server
->|   |_000-default.conf
->|   |_apache2.conf
->|   |_php.ini
->|
->|_site
->|   |_Dockerfile
->|
->|_WWW
->|   |_index.php
->|
->|_docker-compose.yml
->|_LICENSE
->|_README.md
+Tradcoin
+|
+|_db_data
+|
+|_server
+|   |_000-default.conf
+|   |_apache2.conf
+|   |_php.ini
+|
+|_site
+|   |_Dockerfile
+|
+|_WWW
+|   |_index.php
+|
+|_docker-compose.yml
+|_LICENSE
+|_README.md
