@@ -4,12 +4,12 @@
 
 clone du repo : 
 
-> #### git clone https://github.com/Endy02/TradeCoin.git
+>git clone https://github.com/Endy02/TradeCoin.git
 
 
 Ce rendre dans le dossier tradcoin une fois cloner, puis lancer la commande docker :  
 
-> #### docker-compose up -d 
+>docker-compose up -d 
 
 
 ## Arborecense
