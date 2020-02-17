@@ -1,17 +1,16 @@
 <?php
+
 class View
 {
     private $template;
     private $view;
     private $data = [];
 
-
     public function __construct($view, $template="back")
     {
         $this->setTemplate($template);
         $this->setView($view);
     }
-
 
     public function setTemplate($t)
     {
@@ -22,7 +21,6 @@ class View
         }
     }
 
-
     public function setView($v)
     {
         $this->view = strtolower(trim($v));
@@ -31,7 +29,6 @@ class View
             die("La vue n'existe pas");
         }
     }
-
 
     public function assign($key, $value)
     {
@@ -47,7 +44,6 @@ class View
 
         include "views/modals/".$modal.".mod.php";
     }
-
 
     public function __destruct()
     {

@@ -1,1 +1,12 @@
 tradCoin.mwd
+#Ignore Mac system file
+.DS_store
+
+# Ignore node-modules folder
+node-modules
+
+# Ignore sass config files
+.sass-cache
+
+#Ignore .idea
+.idea
