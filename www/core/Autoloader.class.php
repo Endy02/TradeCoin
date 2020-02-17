@@ -7,7 +7,11 @@ class Autoloader
 
     static function autoloader_call($class)
     {
-            $class = str_replace("\\", '', $class);
+            /*
+                Constant DIRECTOTY-SEPARATOR allow to have the root of all system operator
+                For Windows it's '\' and for all others systems it's '/'
+             */
+            $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
 
             if (file_exists("core/".$class.".class.php")) {
                 include "core/".$class.".class.php";
