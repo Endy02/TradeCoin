@@ -1,0 +1,40 @@
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .5em .75rem;
+    line-height: 1.5;
+    border-radius: 1.5rem;
+    transition: color .15s
+                ease-in-out,
+                background-color .15s ease-in-out,
+                border-color .15s ease-in-out,
+                box-shadow .15s ease-in-out;
+}
+
+.btn-blue {
+    color:  #212529;
+    background-color: #00beee;
+    border-color: #00beee;
+}
+
+.btn-orange {
+    color:  #fff;
+    background-color: #f2a900;
+    border-color: #f2a900;
+}
+
+.btn-border-orange {
+    color: #f2a900;
+    background-color: #fff;
+    border: 1px solid #f2a900;
+}

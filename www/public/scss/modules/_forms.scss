@@ -1,0 +1,23 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input-bg-dark {
+    background-color: #f8f9ff;
+    border: 1px solid #F8F9FF;
+    border-radius: .5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+}
+
+.form-label {
+    margin: .5em 0;
+    letter-spacing: 1.5px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: .5em;
+}
