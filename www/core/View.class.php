@@ -6,7 +6,7 @@ class View
     private $view;
     private $data = [];
 
-    public function __construct($view, $template="back")
+    public function __construct($view, $template="front")
     {
         $this->setTemplate($template);
         $this->setView($view);
