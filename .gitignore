@@ -3,10 +3,13 @@ tradCoin.mwd
 .DS_store
 
 # Ignore node-modules folder
-node-modules
+node_modules
 
 # Ignore sass config files
 .sass-cache
 
 #Ignore .idea
 .idea
+
+#Ignore img
+img
