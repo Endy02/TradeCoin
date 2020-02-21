@@ -31,10 +31,21 @@
     color:  #fff;
     background-color: #f2a900;
     border-color: #f2a900;
+    &:hover {
+        color: #f2a900;
+        background-color: #fff;
+        border: 1px solid #f2a900;
+    }
 }
 
 .btn-border-orange {
     color: #f2a900;
     background-color: #fff;
     border: 1px solid #f2a900;
+    &:hover {
+        color:  #fff;
+        background-color: #f2a900;
+        border-color: #f2a900;
+        transition: .3s ease-in;
+    }
 }
