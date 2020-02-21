@@ -30,13 +30,6 @@ nav {
   padding-top: 1.5em;
 }
 
-.btn-border-orange:hover {
-  color:  #fff;
-  background-color: #f2a900;
-  border-color: #f2a900;
-  transition: .3s ease-in;
-}
-
 /* HEADER */
 header {
   position: relative;
@@ -122,19 +115,107 @@ header {
   }
 }
 
-.free-content {
+
+/* FREE-CONTAINER */
+section.free-container {
+  padding-bottom: 4rem;
+  .free-content {
+    h2 {
+      font-size: $h2;
+      text-align: center;
+    }
+    h1 {
+      font-size: $h1;
+      text-align: center;
+    }
+    p {
+      font-size: $subtitle;
+      text-align: center;
+    }
+  }
+}
+
+
+/* SECTION REVIEWS */
+section.reviews {
+  position: relative;
+  background-color: #f3f5f6;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   h2 {
     font-size: $h2;
     text-align: center;
   }
-  h1 {
-    font-size: $h1;
-    text-align: center;
+  ul {
+    display: flex;
+    margin-top: 6rem;
+    padding: 2em 0;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    li {
+      box-shadow: $shadowComments;
+      background-color: #fff;
+      list-style: none;
+      padding: 1.5em;
+      margin-right: 1em;
+    }
   }
-  p {
-    font-size: $subtitle;
-    text-align: center;
+  .user-profil {
+    justify-self: center;
+    display: flex;
+    img {
+      width: 2em;
+      height: 2em;
+      margin-right: .3em;
+    }
+    .img-user-female {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+  .note {
+    display: flex;
+    img {
+      width: 2em;
+      height: 2em;
+      margin-right: .3em;
+      align-self: center;
+    }
+    img:nth-child(2) {
+      margin-left: .5em;
+    }
+  }
+  .button-prev {
+    padding: 1.5em .4em;
+    height: 10%;
+    position: absolute;
+    bottom: 15rem;
+    width: 2rem;
+    background-color: rgba(196, 196, 196, 0.5);
+    z-index: 100;
+    &:hover {
+      background-color: rgba(28, 96, 106, .5);
+    }
+    i {
+      color: #fff;
+    }
+  }
+
+  .button-next {
+    padding: 1.5em .6em;
+    height: 10%;
+    position: absolute;
+    right: 0;
+    bottom: 15rem;
+    width: 2rem;
+    background-color: rgba(196, 196, 196, 0.5);
+    z-index: 100;
+    &:hover {
+      background-color: rgba(28, 96, 106, .3);
+    }
+    i {
+      color: #fff;
+    }
   }
 }
-
 
