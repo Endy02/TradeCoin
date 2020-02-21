@@ -59,10 +59,13 @@
         <div class="col-md-8">
             <img class="platform-device-img" src="../../public/img/platform_device.png" alt="">
         </div>
+        <!--/.col-md-4-->
+
         <div class="col-md-4">
             <h2>Créer votre application depuis n'importe quelle plateforme.</h2>
             <p>Visualisez, analisez vos actions dans les meilleures conditions.</p>
         </div>
+        <!--/.col-md-4-->
     </div>
 </section>
 
@@ -73,9 +76,12 @@
             <p>Construisez votre portefeuille basé sur les crypto-monnaies.</p>
             <p>Achetez et vendez vos actifs sur une plateforme de trading de crypto-monnaies que vous aurez créée !</p>
         </div>
+        <!--/.col-md-6-->
+
         <div class="col-md-6">
             <img class="cryptos" src="../../public/img/cryptogames.png" alt="">
         </div>
+        <!--/.col-md-6-->
     </div>
 </section>
 
@@ -89,7 +95,98 @@
 </section>
 
 <section class="reviews">
-    <!-- Carousel -->
+    <h2>La qualité de nos prestations <b>SE MESURE</b>
+        <br>
+        à la satisfaction <b>DE NOS CLIENTS</b>
+    </h2>
+
+    <div class="button-prev">
+        <i class="fa fa-chevron-left fa-lg"></i>
+    </div>
+    <!--/.button-prev-->
+
+    <div class="button-next">
+        <i class="fa fa-chevron-right fa-lg"></i>
+    </div>
+    <!--/.button-next-->
+
+    <ul>
+        <li class="col-md-4">
+            <div class="user-profil">
+                <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
+                <p>Antoine Tarpe</p>
+            </div>
+            <!--/.user-profil-->
+
+            <div class="user-report">
+                <h4>Bonne Expérience</h4>
+                <p>
+                    Super plateforme. Money Money banks !
+                </p>
+            </div>
+            <!--/.user-report-->
+
+            <div class="note">
+                <p>Note:</p>
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+            </div>
+            <!--/.note-->
+        </li>
+        <li class="col-md-4">
+            <div class="user-profil">
+                <img class="img-user-female" src="../../public/img/website_-_female_user-512.png" alt="icon user man">
+                <p>Julie La Fonte</p>
+            </div>
+            <!--/.user-profil-->
+
+            <div class="user-report">
+                <h4>Remarquable plateforme</h4>
+                <p>
+                    Impressionnée par l’ergonomie de cette plateforme.
+                </p>
+            </div>
+            <!--/.user-report-->
+
+            <div class="note">
+                <p>Note:</p>
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+            </div>
+            <!--/.note-->
+        </li>
+        <li class="col-md-4">
+            <div class="user-profil">
+                <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
+                <p>Jean-Claude Van Damme</p>
+            </div>
+            <!--/.user-profil-->
+
+            <div class="user-report">
+                <h4>Bonne Expérience</h4>
+                <p>
+                    Super plateforme. Très efficace.
+                    <br>
+                    Money Money banks !
+                </p>
+            </div>
+            <!--/.user-report-->
+
+            <div class="note">
+                <p>Note:</p>
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+                <img src="../../public/img/étoile-jaune.png" alt="étoile">
+            </div>
+            <!--/.note-->
+        </li>
+    </ul>
 </section>
 
 <footer>
