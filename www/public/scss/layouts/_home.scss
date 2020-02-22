@@ -4,7 +4,6 @@
 /* ---------------------------------------------------------------------------- */
 
 nav {
-  z-index: 10;
   background-color: #fff;
   opacity: .95;
   box-shadow: $darkShadow;
@@ -163,21 +162,18 @@ section.reviews {
     font-size: $h2;
     text-align: center;
   }
-  ul {
-    display: flex;
+  #carousel-comments {
     margin-top: 6rem;
     padding: 2em 0;
     overflow: hidden;
     flex-wrap: nowrap;
-    li {
-      width: 35%;
+    .item {
       box-shadow: $shadowComments;
       background-color: #fff;
       list-style: none;
       padding: 1.5em;
-      margin-right: 2em;
     }
-    li:last-child {
+    .item:last-child {
       margin-right: 0;
     }
   }
@@ -210,6 +206,13 @@ section.reviews {
 
 .account-user-link {
   padding: 0 5em;
+  p {
+    cursor: pointer;
+    &:hover {
+      color: #1e1e1e;
+      text-decoration: underline;
+    }
+  }
 }
 
 .social-network-contact {
