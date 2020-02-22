@@ -49,3 +49,38 @@
         transition: .3s ease-in;
     }
 }
+
+.button-next {
+    cursor: pointer;
+    padding: 1.5em .6em;
+    height: 10%;
+    position: absolute;
+    right: 0;
+    bottom: 15rem;
+    width: 2rem;
+    background-color: rgba(196, 196, 196, 0.5);
+    z-index: 100;
+    &:hover {
+        background-color: rgba(28, 96, 106, .3);
+    }
+    i {
+        color: #fff;
+    }
+}
+
+.button-prev {
+   cursor: pointer;
+    padding: 1.5em .4em;
+    height: 10%;
+    position: absolute;
+    bottom: 15rem;
+    width: 2rem;
+    background-color: rgba(196, 196, 196, 0.5);
+    z-index: 100;
+    &:hover {
+        background-color: rgba(28, 96, 106, .5);
+    }
+    i {
+        color: #fff;
+    }
+}
