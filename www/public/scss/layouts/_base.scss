@@ -12,6 +12,11 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+footer {
+  padding: 2rem;
+  background-color: #F6C657;
+  color: #fff;
+}
 
 
 /* ---------------------------------------------------------------------------- */
@@ -34,12 +39,20 @@ body {
   justify-content: center;
 }
 
+.jcsb {
+  justify-content: space-between;
+}
+
 .p-right-3 {
   padding-right: 3rem !important;
 }
 
 .p-left-3 {
   padding-left: 3rem !important;
+}
+
+.text-align-c {
+  text-align: center;
 }
 
 .m-top-8 {
