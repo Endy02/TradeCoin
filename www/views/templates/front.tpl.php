@@ -111,7 +111,7 @@
     <!--/.button-next-->
 
     <ul>
-        <li class="col-md-4">
+        <li>
             <div class="user-profil">
                 <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
                 <p>Antoine Tarpe</p>
@@ -135,7 +135,7 @@
             </div>
             <!--/.note-->
         </li>
-        <li class="col-md-4">
+        <li>
             <div class="user-profil">
                 <img class="img-user-female" src="../../public/img/website_-_female_user-512.png" alt="icon user man">
                 <p>Julie La Fonte</p>
@@ -159,7 +159,7 @@
             </div>
             <!--/.note-->
         </li>
-        <li class="col-md-4">
+        <li>
             <div class="user-profil">
                 <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
                 <p>Jean-Claude Van Damme</p>
