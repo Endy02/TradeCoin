@@ -8,7 +8,6 @@ nav {
   background-color: #fff;
   opacity: .95;
   box-shadow: $darkShadow;
-  /*box-shadow: 1px 1px 10px black;*/
 }
 
 .first-word {
@@ -197,15 +196,32 @@ section.reviews {
   }
   .note {
     display: flex;
-    img {
-      width: 2em;
-      height: 2em;
-      margin-right: .3em;
-      align-self: center;
-    }
-    img:nth-child(2) {
+    div:nth-child(2) {
       margin-left: .5em;
     }
   }
 }
 
+
+/* ---------------------------------------------------------------------------- */
+                                /* FOOTER HOME */
+/* ---------------------------------------------------------------------------- */
+
+
+.account-user-link {
+  padding: 0 5em;
+}
+
+.social-network-contact {
+  padding: 0 5em;
+  i {
+    margin-right: 1rem;
+    &:hover {
+      color: #1e1e1e;
+    }
+  }
+}
+
+.warning-footer {
+  padding: 0 1rem;
+}
