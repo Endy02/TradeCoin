@@ -153,11 +153,15 @@ section.reviews {
     overflow: hidden;
     flex-wrap: nowrap;
     li {
+      width: 35%;
       box-shadow: $shadowComments;
       background-color: #fff;
       list-style: none;
       padding: 1.5em;
-      margin-right: 1em;
+      margin-right: 2em;
+    }
+    li:last-child {
+      margin-right: 0;
     }
   }
   .user-profil {
@@ -183,38 +187,6 @@ section.reviews {
     }
     img:nth-child(2) {
       margin-left: .5em;
-    }
-  }
-  .button-prev {
-    padding: 1.5em .4em;
-    height: 10%;
-    position: absolute;
-    bottom: 15rem;
-    width: 2rem;
-    background-color: rgba(196, 196, 196, 0.5);
-    z-index: 100;
-    &:hover {
-      background-color: rgba(28, 96, 106, .5);
-    }
-    i {
-      color: #fff;
-    }
-  }
-
-  .button-next {
-    padding: 1.5em .6em;
-    height: 10%;
-    position: absolute;
-    right: 0;
-    bottom: 15rem;
-    width: 2rem;
-    background-color: rgba(196, 196, 196, 0.5);
-    z-index: 100;
-    &:hover {
-      background-color: rgba(28, 96, 106, .3);
-    }
-    i {
-      color: #fff;
     }
   }
 }
