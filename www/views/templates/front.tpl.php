@@ -17,7 +17,9 @@
         <!-- WEBPACK BUNDLE.JS-->
         <script src="./dist/bundle.js" async></script>
         <!-- CAROUSEL JS -->
-        <script src="../../public/js/carousel.js" async></script>
+        <script src="./public/js/carousel.js" async></script>
+        <!-- SCROLL REVEAL JS -->
+        <script src="./public/js/scroll-reveal.js" async></script>
 
         <title>TradeCoin</title>
     </head>
@@ -56,7 +58,7 @@
             </div>
         </header>
 
-        <section class="plateform-container">
+        <section class="plateform-container reveal-vertical">
             <div class="row">
                 <div class="col-md-8">
                     <img class="platform-device-img" src="../../public/img/platform_device.png" alt="">
@@ -71,7 +73,7 @@
             </div>
         </section>
 
-        <section class="crypto-container">
+        <section class="crypto-container reveal-vertical">
             <div class="row">
                 <div class="col-md-6">
                     <h2>Découvrez tout une variété de crypto-monnaies en constante évolution.</h2>
@@ -87,7 +89,7 @@
             </div>
         </section>
 
-        <section class="free-container d-flex jcc m-top-8">
+        <section class="free-container d-flex jcc m-top-8 reveal-horizontal">
             <div class="free-content">
                 <h2>Vous êtes toujours parmi nous ? Parfait ! Combien cela vous coûtera ?</h2>
                 <h2>Rien ne sortira de votre poche pour construire cette machine de guerre.</h2>
