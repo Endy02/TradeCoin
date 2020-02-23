@@ -1,0 +1,34 @@
+@import "variables";
+
+.sidebar-right{
+  background-color: $nav-bar-color;
+  height: 55%;
+  width: 50px;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  margin-top: 10%;
+  padding-top: 20px;
+  float: right;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+}
+
+.sidebar-right ul{
+  padding-left: 0;
+}
+
+.sidebar-right a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: $font-size;
+  color: white;
+  display: block;
+}
+
+.sidebar-right a:hover {
+  color: $nav-bar-color;
+  background-color: $hover-nav-bar;
+}

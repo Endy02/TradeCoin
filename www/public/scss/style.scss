@@ -1,80 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Saira:400,500,600,700&display=swap');
 @import "variables.scss";
+@import "sidebarleft.scss";
+@import "sidebarright";
+@import "grilldashboard.scss";
 
-.logo img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  max-width: 50%;
-  height: auto;
-  text-align: center;
-}
-
-.sidebar-left{
-  background-color: $nav-bar-color;
-  height: 100%;
-  width: 160px;
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: 1;
-  overflow-x: hidden;
-  padding-top: 20px;
-  float: left;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 50px;
-}
-
-.sidebar-left ul{
-  padding-left: 0;
-}
-
-.sidebar-left a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: $font-size;
-  color: white;
-  display: block;
-}
-
-.sidebar-left a:hover {
-  color: $nav-bar-color;
-  background-color: $hover-nav-bar;
-}
-
-.sidebar-right{
-  background-color: $nav-bar-color;
-  height: 60%;
-  width: 40px;
-  top: 0;
-  right: 0;
-  position: fixed;
-  z-index: 1;
-  overflow-x: hidden;
-  margin-top: 10%;
-  padding-top: 20px;
-  float: right;
-  border-bottom-left-radius: 50px;
-  border-top-left-radius: 50px;
-}
-
-.sidebar-right ul{
-  padding-left: 0;
-}
-
-.sidebar-right a {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: $font-size;
-  color: white;
-  display: block;
-}
-
-.sidebar-right a:hover {
-  color: $nav-bar-color;
-  background-color: $hover-nav-bar;
+*{
+  box-sizing: border-box;
 }
 
 body{
@@ -82,6 +13,13 @@ body{
   background-color: #E2E2E2;
   font-family: 'Saira', sans-serif;
   font-weight: 600;
+}
+
+.container{
+  width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
 }
 
 /*Controler les flottants*/
@@ -95,12 +33,4 @@ body{
 .clearfix::before{
   content: '';
   display: table;
-}
-
-
-.container{
-  width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-  position: relative;
 }
