@@ -52,11 +52,11 @@
 
 .button-next {
     cursor: pointer;
-    padding: 1.5em .6em;
-    height: 6%;
+    padding: 1.9em .6em;
+    height: 25%;
     position: absolute;
+    bottom: 7.5rem;
     right: 0;
-    bottom: 13rem;
     width: 2rem;
     background-color: rgba(196, 196, 196, 0.5);
     z-index: 100;
@@ -68,13 +68,16 @@
         color: #fff;
     }
 }
+.button-next-hidden, .button-prev-hidden {
+  display: none;
+}
 
 .button-prev {
-   cursor: pointer;
-    padding: 1.5em .4em;
-    height: 10%;
+    cursor: pointer;
+    padding: 1.9em .4em;
+    height: 25%;
     position: absolute;
-    bottom: 13rem;
+    bottom: 7.5rem;
     width: 2rem;
     background-color: rgba(196, 196, 196, 0.5);
     z-index: 100;

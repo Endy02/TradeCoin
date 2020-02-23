@@ -102,28 +102,18 @@
                 à la satisfaction <b>DE NOS CLIENTS</b>
             </h2>
 
-            <div class="button-prev">
-                <i class="fa fa-chevron-left fa-lg"></i>
-            </div>
-            <!--/.button-prev-->
-
-            <div class="button-next">
-                <i class="fa fa-chevron-right fa-lg"></i>
-            </div>
-            <!--/.button-next-->
-
             <ul id="carousel-comments">
                 <li class="item">
                     <div class="user-profil">
-                        <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
-                        <p>Antoine Tarpe</p>
+                        <img class="img-user-female" src="../../public/img/website_-_female_user-512.png" alt="icon user man">
+                        <p>Antoinette Tarpe</p>
                     </div>
                     <!--/.user-profil-->
 
                     <div class="user-report">
                         <h4>Bonne Expérience</h4>
                         <p>
-                            Super plateforme. Money Money banks !
+                            Super plateforme. Money Money Banks !
                         </p>
                     </div>
                     <!--/.user-report-->
@@ -221,7 +211,7 @@
                 <li class="item">
                     <div class="user-profil">
                         <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
-                        <p>Jean-Claude Van Damme</p>
+                        <p>Hubert De Fournier</p>
                     </div>
                     <!--/.user-profil-->
 
@@ -258,7 +248,7 @@
                 <li class="item">
                     <div class="user-profil">
                         <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
-                        <p>Jean-Claude Van Damme</p>
+                        <p>James Watson</p>
                     </div>
                     <!--/.user-profil-->
 
