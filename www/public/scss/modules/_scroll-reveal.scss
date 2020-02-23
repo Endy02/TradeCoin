@@ -1,0 +1,16 @@
+.reveal-vertical {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+.reveal-horizontal {
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transform: translateX(0);
+  transition: 1.5s cubic-bezier(.5, 0, 0, 1);
+}
