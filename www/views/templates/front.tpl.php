@@ -35,7 +35,8 @@
                     <span>Langues</span>
                 </li> <!-- DROPDOWN MENU -->
                 <li class="navbar-item">
-                    <a class="btn btn-border-orange btn-login">Se connecter</a>
+                    <a class="user-logo btn btn-border-orange btn-login"><i class="fa fa-user"></i></a>
+                    <a class="btn-connect btn btn-border-orange btn-login">Se connecter</a>
                 </li>
                 <li class="navbar-item">
                     <a href="#" class="link-sign-in">S'inscrire</a>
@@ -43,7 +44,7 @@
             </ul>
         </nav>
 
-        <header>
+        <header class="header-home-page">
             <img src="./public/img/come_fare_soldi_con_il_trading.jpg" alt="">
             <div class="content-header">
                 <h1>IL EST TEMPS DE CHANGER DE NIVEAU !</h1>
