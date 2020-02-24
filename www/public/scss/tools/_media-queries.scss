@@ -1,7 +1,6 @@
 /* ---------------------------------------------------------------------------- */
                                 /* COLUMNS SIZE */
 /* ---------------------------------------------------------------------------- */
-
 @media (min-width: 768px) {
     .col-md-2 {
         -webkit-box-flex: 0;
@@ -33,11 +32,9 @@
     }
 }
 
-
 /* ---------------------------------------------------------------------------- */
                                 /* CONTAINERS SIZE */
 /* ---------------------------------------------------------------------------- */
-
 @media (min-width: 992px) {
     .container, .container-lg, .container-md, .container-sm {
         max-width: 960px;
@@ -49,11 +46,13 @@
         max-width: 720px;
     }
 }
+
 @media (min-width: 576px) {
     .container, .container-sm {
         max-width: 540px;
     }
 }
+
 @media (min-width: 992px) {
     .container {
         max-width: 960px;
@@ -69,5 +68,115 @@
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+                                /* NAV HOME PAGE */
+/* ---------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar-brand {
+        margin-left: 0;
+    }
+    .navbar-content-end {
+        justify-content: center;
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+                                /* HEADER HOME PAGE */
+/* ---------------------------------------------------------------------------- */
+@media screen and (min-width: 577px) and (max-width: 770px) {
+    .header-home-page {
+        height: 100vh;
+    }
+    .plateform-container .platform-device-img {
+        height: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    .header-home-page {
+        height: 100vh;
+        padding-top: 9rem;
+    }
+    .content-header {
+        top: 17em;
+        left: 5%;
+        padding: 0 2rem;
+        width: 90%;
+        p:nth-child(2), p:nth-child(3) {
+            display: none;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+                        /* SECTION PLATEFORM CONTAINER */
+/* ---------------------------------------------------------------------------- */
+@media screen and (min-width: 577px) and (max-width: 770px) {
+    section.free-container {
+        padding-bottom: 4rem;
+        padding: 0 2rem 4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .plateform-container {
+        margin-top: 5rem;
+        &>.col-md-4 {
+            padding-right: 0;
+            padding-left: 2rem;
+        }
+    }
+
+}
+
+/* ---------------------------------------------------------------------------- */
+                        /* SECTION CRYPTO CONATAINER */
+/* ---------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+    .crypto-container {
+        &>.col-md-6 {
+            padding-left: 0;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+                        /* SECTION FREE CONTAINER */
+/* ---------------------------------------------------------------------------- */
+@media (max-width: 576px) {
+    .free-container {
+        p span {
+            margin-top: 1rem;
+        }
+        .free-content {
+            padding: 0 1rem;
+        }
+    }
+}
+
+/* ---------------------------------------------------------------------------- */
+                            /* FOOTER HOME PAGE */
+/* ---------------------------------------------------------------------------- */
+@media (max-width: 569px) {
+    .social-network-contact {
+        padding: 1rem;
+    }
+    .account-user-link {
+        padding: 1rem;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 770px) {
+    .social-network-contact {
+         padding: 0;
+    }
+    .account-user-link {
+         padding: 0;
     }
 }
