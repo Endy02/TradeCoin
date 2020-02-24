@@ -1,36 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Saira:400,500,600,700&display=swap');
-@import "variables.scss";
-@import "sidebarleft.scss";
-@import "sidebarright";
-@import "grilldashboard.scss";
+/* LAYOUTS */
+@import "layouts/base";
+@import "layouts/config-bdd";
+@import "layouts/home";
 
-*{
-  box-sizing: border-box;
-}
+/* TOOLS */
+@import "tools/variables";
+@import "tools/media-queries";
 
-body{
-  margin: 0;
-  background-color: #E2E2E2;
-  font-family: 'Saira', sans-serif;
-  font-weight: 600;
-}
-
-.container{
-  width: 1140px;
-  padding: 0 15px;
-  margin: 0 auto;
-  position: relative;
-}
-
-/*Controler les flottants*/
-.clearfix::after{
-  content: '';
-  clear: both;
-  display: table;
-}
-
-/*Controle de la marge des enfants*/
-.clearfix::before{
-  content: '';
-  display: table;
-}
+/* MODULES */
+@import "modules/forms";
+@import "modules/button";
+@import "modules/logo";
+@import "modules/sidebar";
+@import "modules/carousel";
+@import "modules/scroll-reveal";

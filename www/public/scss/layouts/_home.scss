@@ -1,0 +1,234 @@
+@import "../tools/variables";
+/* ---------------------------------------------------------------------------- */
+                                  /* NAVBAR HOME */
+/* ---------------------------------------------------------------------------- */
+
+nav {
+  background-color: #fff;
+  opacity: .95;
+  box-shadow: $darkShadow;
+}
+
+.first-word {
+  font-weight: 500;
+}
+
+.second-word {
+  color: #f2a900;
+}
+
+.link-sign-in {
+  font-size: .90em;
+}
+
+.navbar-content-end .navbar-item:first-child,
+.navbar-content-end .navbar-item:nth-child(3) {
+  padding-top: 35px;
+}
+
+.navbar-content-end .navbar-item:nth-child(2) {
+  padding-top: 1.5em;
+}
+
+
+/* ---------------------------------------------------------------------------- */
+                                    /* HEADER */
+/* ---------------------------------------------------------------------------- */
+
+header {
+  position: relative;
+  padding-top: 4rem;
+  margin-left: 0 !important;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.content-header {
+  position: absolute;
+  top: 10em;
+  left: 10em;
+  color: white;
+  width: 52%;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    text-shadow: 2px 2px 10px rgba(0,0,0,.55);
+  }
+  p {
+    margin-top: 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0,0,0, .50);
+  }
+  .money-button {
+    margin-top: 1em;
+    font-size: 1.3rem;
+    padding: .75rem 2rem;
+    box-shadow: $darkShadow;
+  }
+}
+
+
+/* ---------------------------------------------------------------------------- */
+                          /* SECTION PLATFORM CONTAINER */
+/* ---------------------------------------------------------------------------- */
+
+.plateform-container {
+  margin-top: 7rem;
+  .row div:first-child {
+    margin-top: 3em;
+  }
+  .row div:nth-child(2) h2 {
+    margin-top: 5rem;
+    font-size: $h2;
+    padding: 0 1em 0 0;
+  }
+  .row div:nth-child(2) p {
+    font-size: 1.5em;
+    padding: 0 1em 0 0;
+  }
+  .platform-device-img {
+    margin-top: 4em;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+/* ---------------------------------------------------------------------------- */
+                          /* SECTION CRYPTO CONTAINER */
+/* ---------------------------------------------------------------------------- */
+
+.crypto-container {
+  margin-top: 12rem;
+  .row div:first-child h2 {
+    font-size: $h2;
+    padding: 0 0 0 1.2em;
+  }
+  .row div:first-child p {
+    font-size: $subtitle;
+    padding: 0 0 0 1.5em;
+  }
+
+  .row div:nth-child(2) {
+    margin-top: 3em;
+  }
+
+  .cryptos {
+    width: 80%;
+    margin-left: 1em;
+  }
+}
+
+
+/* ---------------------------------------------------------------------------- */
+                                /* FREE-CONTAINER */
+/* ---------------------------------------------------------------------------- */
+
+section.free-container {
+  padding-bottom: 4rem;
+  .free-content {
+    h2 {
+      font-size: $h2;
+      text-align: center;
+    }
+    h1 {
+      font-size: $h1;
+      text-align: center;
+    }
+    p {
+      font-size: $subtitle;
+      text-align: center;
+    }
+  }
+}
+
+/* ---------------------------------------------------------------------------- */
+                                /* SECTION REVIEWS */
+/* ---------------------------------------------------------------------------- */
+
+section.reviews {
+  position: relative;
+  background-color: #f3f5f6;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  h2 {
+    font-size: $h2;
+    text-align: center;
+  }
+  #carousel-comments {
+    margin-top: 6rem;
+    padding: 2em 0;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    .item {
+      height: 100%;
+      box-shadow: $shadowComments;
+      background-color: #fff;
+      list-style: none;
+      padding: 1.5em;
+    }
+    .item:last-child {
+      margin-right: 0;
+    }
+  }
+  .user-profil {
+    justify-self: center;
+    display: flex;
+    img {
+      width: 2em;
+      height: 2em;
+      margin-right: .3em;
+    }
+    .img-user-female {
+      width: 2.5em;
+      height: 2.5em;
+    }
+  }
+  .user-report p {
+    height: 5em;
+  }
+  .note {
+    display: flex;
+    div:nth-child(2) {
+      margin-left: .5em;
+    }
+  }
+}
+
+
+/* ---------------------------------------------------------------------------- */
+                                /* FOOTER HOME */
+/* ---------------------------------------------------------------------------- */
+
+
+.account-user-link {
+  padding: 0 5em;
+  p {
+    cursor: pointer;
+    &:hover {
+      color: #1e1e1e;
+      text-decoration: underline;
+    }
+  }
+}
+
+.social-network-contact {
+  padding: 0 5em;
+  i {
+    margin-right: 1rem;
+    &:hover {
+      color: #1e1e1e;
+    }
+  }
+}
+
+.warning-footer {
+  padding: 0 1rem;
+}
