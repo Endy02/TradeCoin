@@ -35,8 +35,7 @@
                     <span>Langues</span>
                 </li> <!-- DROPDOWN MENU -->
                 <li class="navbar-item">
-                    <a class="user-logo btn btn-border-orange btn-login"><i class="fa fa-user"></i></a>
-                    <a class="btn-connect btn btn-border-orange btn-login">Se connecter</a>
+                    <a class=" btn btn-border-orange btn-login">Se connecter</a>
                 </li>
                 <li class="navbar-item">
                     <a href="#" class="link-sign-in">S'inscrire</a>

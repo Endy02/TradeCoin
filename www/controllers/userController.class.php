@@ -17,12 +17,9 @@ class UserController
         echo "L'utilisateur va être supprimé";
     }
 
-
-
-
     public function loginAction()
     {
-        $myView = new View("login", "account");
+        $myView = new View("dashboard", "back");
     }
 
     public function registerAction()
@@ -57,5 +54,10 @@ class UserController
     public function forgotPwdAction()
     {
         $myView = new View("forgotPwd", "account");
+    }
+
+    public function dashboardBackAction()
+    {
+        $myView = new View("dashboard-back", "back");
     }
 }
