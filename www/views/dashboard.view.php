@@ -41,7 +41,8 @@
             <div class='column'>
                 <div class='histo'>
                     <div class="title-histo">
-                        <h2>Historique</h2>
+                        <img class="background-historique" src="public/img/background_historique.jpg">
+                        <h2 class="title-histo2">Historique</h2>
                     </div>
                     <div class="table-histo">
                         <table class="histo-table">
@@ -93,14 +94,17 @@
                     <div class="time">
                         <span class="jours">Jours</span>
                         <span class="semaines">Semaines</span>
-                        Mois
-                        Années
+                        <span class="mois">Mois</span>
+                        <span class="annees">Années</span>
                     </div>
                     <div class="check-graph">
                         <i class="far fa-check-square"></i> <span class="visiteur-check">Visiteurs</span>
                         <i class="far fa-check-square"></i> <span class="abonne-check">Abonnés</span>
                         <i class="far fa-square"></i> <span class="commentaire-check">Commentaires</span>
                     </div>
+                    <!--<div class="background-image">
+                        <img class="background-stat" src="public/img/background_rectangle.jpg">
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -152,11 +156,21 @@
             <div class='column'>
                 <div class='box'>
                     <h3 class="courses-rating">Anomalies</h3>
-                    <div class="reporting">
-                        Users Reporting
+                    <div class="cercle-ano">
+                        6
                     </div>
                     <div class="ano-div center-ano">
-                        <i class="fas fa-user-circle"></i><span class="visitor">visitor </span><span class="eyes">150 <i class="fas fa-eye"></i></span>
+                        <div class="arrow-left"><i class="fas fa-chevron-circle-left"></i></div>
+                        <div class="arrow-right"><i class="fas fa-chevron-circle-right"></i></div>
+
+                        <div class="text-ano">
+                            <span class="text-prin">Bug in ichimoku cours at chapt....</span>
+                            <br>
+                            <span class="author">Laurent Gina</span>
+                            <br>
+                            <span class="status">Status : Teacher</span>
+                            <span class="date">06/11/2019</span>
+                        </div>
                     </div>
                 </div>
             </div>
