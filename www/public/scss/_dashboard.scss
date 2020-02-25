@@ -88,6 +88,18 @@
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     margin: 0;
+    color: black;
+    background-color: #0AE2FF;
+  }
+
+  .time a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .time a:hover{
+    color: black;
+    background-color: #0AE2FF;
   }
 
   .semaines {

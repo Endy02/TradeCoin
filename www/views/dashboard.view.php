@@ -93,8 +93,8 @@
                 <div class="stat-header">
                     <div class="time">
                         <span class="jours">Jours</span>
-                        <span class="semaines">Semaines</span>
-                        <span class="mois">Mois</span>
+                        <a href="#"><span class="semaines">Semaines</span></a>
+                        <a href="#"><span class="mois">Mois</span></a>
                         <span class="annees">Années</span>
                     </div>
                     <div class="check-graph">
