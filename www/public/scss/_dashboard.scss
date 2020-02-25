@@ -1,0 +1,230 @@
+*{
+  box-sizing: border-box;
+}
+
+  .logo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    max-width: 50%;
+    height: auto;
+    text-align: center;
+  }
+
+  body {
+    margin: 0;
+    background-color: #E2E2E2;
+    font-family: 'Saira', sans-serif;
+    font-weight: 600;
+  }
+
+  .container {
+    width: 1140px;
+    padding: 0 15px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .some-page-wrapper {
+    margin: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  /* STATISTIQUE */
+  .stat {
+    background-color: white;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px 10px 0;
+    padding-left: 10px;
+    padding-top: 0.3rem;
+  }
+
+  .stat-header {
+    background-color: white;
+    height: 50px;
+    border-radius: 10px;
+    margin: 20px 10px 0;
+    padding-left: 10px;
+  }
+
+  .time{
+    padding-top: 0.8rem;
+    float: left;
+    padding-left: 1rem;
+    word-spacing: 1rem;
+  }
+
+  .check-graph {
+    padding-right: 2rem;
+    padding-top: 0.8rem;
+    float: right;
+    word-spacing: 1rem;
+  }
+
+  .count{
+    text-align: center;
+  }
+
+  .count-visiteur{
+    padding-right: 2rem;
+    text-decoration: underline;
+  }
+
+  .count-abonnee{
+    padding-right: 2rem;
+    text-decoration: underline;
+  }
+
+  .count-commentaire{
+    text-decoration: underline;
+  }
+
+  /* ANOMALIE */
+  .ano {
+    background-color: white;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px 10px 0;
+    padding-left: 10px;
+  }
+
+  /* Historique */
+  .histo {
+    //background-image: url("../img/background_historique.jpg");
+    background-color: white;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px 10px 0;
+    text-align: center;
+  }
+
+  .title-histo {
+    //background-image: url("../img/background_historique.jpg");
+    background-color: pink;
+
+  }
+
+  .histo-table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: auto;
+  }
+
+  th, td {
+    padding: 8px;
+    padding-top: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .cercle {
+    display: inline-block;
+    text-align: center;
+    margin-left: 10px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    background-color: black;
+    color: white;
+  }
+
+  .num-page{
+    margin-top: 2.5rem;
+  }
+
+
+  .box {
+    background-color: white;
+    height: 200px;
+    border-radius: 10px;
+    margin: 20px 10px 0;
+  }
+
+  /* COURSES RATING */
+.checked {
+  color: #F9DB43;
+  font-size: 2rem;
+}
+
+.note{
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 0.2rem;
+}
+
+.rating-star {
+  padding-left: 3rem;
+  padding-top: 0.2rem;
+  word-spacing: 1rem;
+}
+
+.courses-rating {
+  padding-left: 10px;
+}
+
+.text {
+  background-color: #88C9DE;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+
+.center {
+  margin: auto;
+  width: 100%;
+  padding: 4%;
+}
+
+/* PAGES RATING */
+
+.checked-right{
+  float: right;
+  padding-right: 1rem;
+  color: #F9DB43;
+  font-size: 1rem;
+}
+
+.visitor-div {
+  //background-image: url("../img/background_rectangle.jpg");
+  //background-repeat: no-repeat;
+  background-color: black;
+  color: white;
+  margin-top: 2rem;
+  height: 4.1rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px ;
+}
+
+.lm a{
+  color: #88C9DE;
+}
+
+.visitor {
+  padding-left: 1rem;
+
+}
+
+.center-visitor {
+  padding: 6%;
+}
+
+.eyes {
+  float: right;
+  padding-right: 1rem;
+}

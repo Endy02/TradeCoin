@@ -25,3 +25,7 @@
 /mot-de-passe-oublie:
   controller: "user"
   action: "forgotPwd"
+
+/dashboard:
+  controller: "user"
+  action: "dashboardBack"
