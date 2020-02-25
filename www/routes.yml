@@ -29,3 +29,7 @@
 /dashboard:
   controller: "user"
   action: "dashboardBack"
+
+/all-page:
+  controller: "user"
+  action: "allPage"

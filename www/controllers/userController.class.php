@@ -60,4 +60,9 @@ class UserController
     {
         $myView = new View("dashboard", "back");
     }
+
+    public function allPageAction()
+    {
+        $myView = new View("allPage", "pages");
+    }
 }

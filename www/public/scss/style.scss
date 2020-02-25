@@ -3,6 +3,7 @@
 @import "layouts/base";
 @import "layouts/config-bdd";
 @import "layouts/home";
+@import "layouts/allPage";
 
 /* TOOLS */
 @import "tools/variables";
@@ -17,6 +18,5 @@
 @import "modules/scroll-reveal";
 
 /* DASHBOARD */
-@import "dashboard";
-//@import "sidebarright";
-@import "sidebarleft";
+@import "layouts/dashboard";
+@import "modules/sidebarleft";
