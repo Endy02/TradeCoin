@@ -1,0 +1,44 @@
+@import "tools/variables";
+
+.logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.sidebar-left{
+  background-color: $nav-bar-color;
+  height: 100%;
+  width: 160px;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1;
+  overflow-x: hidden;
+  padding-top: 20px;
+  float: left;
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.sidebar-left ul{
+  padding-left: 0;
+}
+
+.sidebar-left a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: $font-size;
+  color: white;
+  display: block;
+}
+
+.sidebar-left a:hover {
+  color: $nav-bar-color;
+  background-color: $hover-nav-bar;
+}
