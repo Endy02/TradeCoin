@@ -1,17 +1,17 @@
 new Chart(document.getElementById("myChart"), {
     type: 'bar',
     data: {
-        labels: ["17/02","25/02","18/02","19/02","20/02","21/02","22/02","23/02","24/02","25/02"],
+        labels: ["17 Fev.","25 Fev.","18 Fev.","19 Fev.","20 Fev.","21 Fev.","22 Fev.","23 Fev.","24 Fev.","25 Fev."],
         datasets: [
             {
                 label: "Visites",
                 backgroundColor: ["#88C9DE","#88C9DE","#88C9DE","#88C9DE","#88C9DE","#88C9DE","#88C9DE","#88C9DE","#88C9DE","#88C9DE"],
-                data: [117,89,43,82,182,12,31,43,63,36]
+                data: [6,15,13,15,7,12,19,20,15,20]
             },
             {
                 label: "Abonnés",
                 backgroundColor: ["#7BEE94","#7BEE94","#7BEE94","#7BEE94","#7BEE94","#7BEE94","#7BEE94","#7BEE94","#7BEE94","#7BEE94"],
-                data: [34,54,23,6,8,43,2,34,95,23]
+                data: [3,6,3,10,8,4,6,17,8,15]
             }
         ]
     },

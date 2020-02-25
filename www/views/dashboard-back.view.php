@@ -10,9 +10,9 @@
 
     <title>Dashboard</title>
 </head>
-<body>
+<body class="body-dashboard">
 
-<header>
+<header class="header-dashboard">
 
     <nav class="sidebar-left">
         <div class="logo">
@@ -31,13 +31,13 @@
 
 </header>
 
-<div class="container">
+<div class="container-dashboard">
 
     <div class='some-page-wrapper'>
 
         <h1>Dashboard</h1>
 
-        <div class="row">
+        <div class="row-dashboard">
             <div class='column'>
                 <div class='histo'>
                     <div class="title-histo">
@@ -87,28 +87,28 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row-dashboard">
             <div class="column">
                 <div class="stat-header">
                     <div class="time">
-                        Jours
-                        Semaines
+                        <span class="jours">Jours</span>
+                        <span class="semaines">Semaines</span>
                         Mois
                         Années
                     </div>
                     <div class="check-graph">
-                        <i class="far fa-check-square"></i> Visiteurs
-                        <i class="far fa-check-square"></i> Abonnés
-                        <i class="far fa-square"></i> Commentaires
+                        <i class="far fa-check-square"></i> <span class="visiteur-check">Visiteurs</span>
+                        <i class="far fa-check-square"></i> <span class="abonne-check">Abonnés</span>
+                        <i class="far fa-square"></i> <span class="commentaire-check">Commentaires</span>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row-dashboard">
             <div class='column'>
                 <div class='stat'>
-                    <canvas id="myChart" width="1010px" height="170px"></canvas>
+                    <canvas id="myChart" width="1200px" height="170px"></canvas>
                     <script src="./public/js/chartdashboard.js"></script>
                     <div class="count">
                         <span class="count-visiteur">Visiteurs : 352 </span>
@@ -119,7 +119,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row-dashboard">
             <div class='column'>
                 <div class='box'>
                     <h3 class="courses-rating">Courses rating</h3>

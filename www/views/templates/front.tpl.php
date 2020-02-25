@@ -43,7 +43,7 @@
     </ul>
 </nav>
 
-<header>
+<header class="header-home-page">
     <img src="./public/img/come_fare_soldi_con_il_trading.jpg" alt="">
     <div class="content-header">
         <h1>IL EST TEMPS DE CHANGER DE NIVEAU !</h1>
