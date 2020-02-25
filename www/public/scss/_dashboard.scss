@@ -127,14 +127,7 @@
     text-decoration: underline;
   }
 
-  /* ANOMALIE */
-  .ano {
-    background-color: white;
-    height: 200px;
-    border-radius: 10px;
-    margin: 20px 10px 0;
-    padding-left: 10px;
-  }
+
 
   /* Historique */
   .histo {
@@ -201,7 +194,7 @@
 }
 
 .rating-star {
-  padding-left: 3rem;
+  padding-left: 4.5rem;
   padding-top: 0.2rem;
   word-spacing: 1rem;
 }
@@ -226,10 +219,15 @@
 /* PAGES RATING */
 
 .checked-right{
-  float: right;
+  //float: right;
   padding-right: 1rem;
   color: #F9DB43;
   font-size: 1rem;
+}
+
+.fa-file{
+  font-size: 2rem;
+  padding-right: 0.5rem;
 }
 
 .visitor-div {
@@ -238,9 +236,13 @@
   background-color: black;
   color: white;
   margin-top: 2rem;
-  height: 4.1rem;
+  height: 4.2rem;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px ;
+}
+
+.lm{
+  text-align: center;
 }
 
 .lm a{
@@ -259,4 +261,17 @@
 .eyes {
   float: right;
   padding-right: 1rem;
+}
+
+/* ANOMALIE */
+
+.cercle-ano {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background-color: black;
+  color: white;
 }

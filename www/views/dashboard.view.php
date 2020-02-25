@@ -142,7 +142,7 @@
                 <div class='box'>
                     <h3 class="courses-rating">Pages rating</h3>
                     <div class="lm">
-                        <span class="fa fa-star checked"></span> <a href="#documentation/ichimoku">.../documentation/ichimoku</a>
+                        <i class="fas fa-file"></i> <a href="#documentation/ichimoku">.../documentation/ichimoku</a>
                     </div>
                     <div class="visitor-div center-visitor">
                         <span class="visitor">visitor </span><span class="eyes">150 <i class="fas fa-eye"></i></span>
@@ -155,8 +155,8 @@
                     <div class="reporting">
                         Users Reporting
                     </div>
-                    <div class="visitor-div center-visitor">
-                        <span class="visitor">visitor </span><span class="eyes">150 <i class="fas fa-eye"></i></span>
+                    <div class="ano-div center-ano">
+                        <i class="fas fa-user-circle"></i><span class="visitor">visitor </span><span class="eyes">150 <i class="fas fa-eye"></i></span>
                     </div>
                 </div>
             </div>

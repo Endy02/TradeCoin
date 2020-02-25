@@ -61,6 +61,6 @@ class UserController
 
     public function dashboardBackAction()
     {
-        $myView = new View("dashboard-back", "back");
+        $myView = new View("dashboard", "back");
     }
 }
