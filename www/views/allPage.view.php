@@ -38,8 +38,8 @@
         <h1>All pages</h1>
 
         <div class="row-dashboard">
-            <table>
-                <thead>
+            <table class="table-all">
+                <thead class="thead-all">
                     <tr>
                         <th>
                             <p>
@@ -65,193 +65,193 @@
                 </thead>
                 <tbody>
                     <tr class="tr-grey">
-                    <td>
+                    <td class="td-all">
                         <p>About Us</p>
-                    </td>
-                    <td>
+                    </td class="td-all">
+                    <td class="td-all">
                         <p>https://www.fujyn.com/about-us</p>
-                    </td>
-                    <td>
+                    </td class="td-all">
+                    <td class="td-all">
                         <p>24/01/2020</p>
-                    </td>
-                    <td>
+                    </td class="td-all">
+                    <td class="td-all">
                         <p>
                             <i class="fa fa-pencil-alt"></i>
                         </p>
-                    </td>
-                    <td>
+                    </td class="td-all">
+                    <td class="td-all">
                         <p>
                             <i class="fa fa-times"></i>
                         </p>
-                    </td>
+                    </td class="td-all">
                 </tr>
                     <tr>
-                        <td>
+                        <td class="td-all">
                             <p>About Us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>https://www.fujyn.com/about-us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>24/01/2020</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-pencil-alt"></i>
                             </p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-times"></i>
                             </p>
-                        </td>
+                        </td class="td-all">
                     </tr>
                     <tr class="tr-grey">
-                        <td>
+                        <td class="td-all">
                             <p>About Us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>https://www.fujyn.com/about-us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>24/01/2020</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-pencil-alt"></i>
                             </p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-times"></i>
                             </p>
-                        </td>
+                        </td class="td-all">
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-all">
                             <p>About Us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>https://www.fujyn.com/about-us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>24/01/2020</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-pencil-alt"></i>
                             </p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-times"></i>
                             </p>
-                        </td>
+                        </td class="td-all">
                     </tr>
                     <tr class="tr-grey">
-                        <td>
+                        <td class="td-all">
                             <p>About Us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>https://www.fujyn.com/about-us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>24/01/2020</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-pencil-alt"></i>
                             </p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-times"></i>
                             </p>
-                        </td>
+                        </td class="td-all">
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-all">
                             <p>About Us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>https://www.fujyn.com/about-us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>24/01/2020</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-pencil-alt"></i>
                             </p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-times"></i>
                             </p>
-                        </td>
+                        </td class="td-all">
                     </tr>
                     <tr class="tr-grey">
-                        <td>
+                        <td class="td-all">
                             <p>About Us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>https://www.fujyn.com/about-us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>24/01/2020</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-pencil-alt"></i>
                             </p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-times"></i>
                             </p>
-                        </td>
+                        </td class="td-all">
                     </tr>
                     <tr>
-                        <td>
+                        <td class="td-all">
                             <p>About Us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>https://www.fujyn.com/about-us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>24/01/2020</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-pencil-alt"></i>
                             </p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-times"></i>
                             </p>
-                        </td>
+                        </td class="td-all">
                     </tr>
                     <tr class="tr-grey">
-                        <td>
+                        <td class="td-all">
                             <p>About Us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>https://www.fujyn.com/about-us</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>24/01/2020</p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-pencil-alt"></i>
                             </p>
-                        </td>
-                        <td>
+                        </td class="td-all">
+                        <td class="td-all">
                             <p>
                                 <i class="fa fa-times"></i>
                             </p>
-                        </td>
+                        </td class="td-all">
                     </tr>
                 </tbody>
             </table>

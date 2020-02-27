@@ -1,11 +1,11 @@
-table {
+.table-all {
   background-color: #fff;
   width: 100%;
   border-radius: .3rem;
   height: 70vh;
 }
 
-thead {
+.thead-all {
   padding: 5rem 0;
   p {
     text-align: center;
@@ -18,7 +18,7 @@ thead {
   border-color: none !important;
 }
 
-td {
+.td-all {
   p {
     margin: 0;
     padding: 0;
