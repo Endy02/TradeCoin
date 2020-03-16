@@ -63,6 +63,6 @@ class UserController
 
     public function allPageAction()
     {
-        $myView = new View("allPage", "pages");
+        $myView = new View("allPage", "back");
     }
 }
