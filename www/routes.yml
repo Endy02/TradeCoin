@@ -26,10 +26,31 @@
   controller: Controllers\user
   action: "forgotPwd"
 
-/dashboard:
-  controller: Controllers\user
+
+/tableau-de-bord:
+  controller: "user"
   action: "dashboardBack"
 
-/all-page:
-  controller: Controllers\user
+/pages:
+  controller: "user"
   action: "allPage"
+
+/cours:
+  controller: "user"
+  action: "cours"
+
+/apparence:
+  controller: "user"
+  action: "apparence"
+
+/utilisateur:
+  controller: "user"
+  action: "default"
+
+/categories:
+  controller: "user"
+  action: "categories"
+
+/tradeline:
+  controller: "user"
+  action: "tradeLine"
