@@ -1,26 +1,31 @@
 /:
-  controller: default
+  controller: Controllers\default
   action: default
 
 /test/yves:
-  controller: default
+  controller: Conrollers\default
   action: default
 
 /ajout-utilisateur:
-  controller: "user"
+  controller: Controllers\user
   action: "add"
 
+/utilisateur:
+  controller: Controllers\user
+  action: "default"
+
 /se-connecter:
-  controller: "user"
+  controller: Controllers\user
   action: "login"
 
 /s-inscrire:
-  controller: "user"
+  controller: Controllers\user
   action: "register"
 
 /mot-de-passe-oublie:
-  controller: "user"
+  controller: Controllers\user
   action: "forgotPwd"
+
 
 /tableau-de-bord:
   controller: "user"

@@ -1,4 +1,6 @@
 <?php
+namespace Core;
+
 class helpers
 {
     public static function getUrl($controller, $action)
