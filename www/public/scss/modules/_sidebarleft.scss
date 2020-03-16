@@ -30,7 +30,7 @@
   padding-left: 0;
 }
 
-.sidebar-left a {
+.sidebar-left .a-nav {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   font-size: $font-size;
@@ -38,7 +38,7 @@
   display: block;
 }
 
-.sidebar-left a:hover {
+.sidebar-left .a-nav:hover {
   color: $nav-bar-color;
   background-color: $hover-nav-bar;
 }

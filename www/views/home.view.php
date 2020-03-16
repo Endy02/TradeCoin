@@ -35,7 +35,7 @@
                     <span>Langues</span>
                 </li> <!-- DROPDOWN MENU -->
                 <li class="navbar-item">
-                    <a class=" btn btn-border-orange btn-login">Se connecter</a>
+                    <a class=" btn btn-border-orange btn-login" href="<?= helpers::getUrl("user", "dashboardBack") ?>">Se connecter</a>
                 </li>
                 <li class="navbar-item">
                     <a href="#" class="link-sign-in">S'inscrire</a>
@@ -61,7 +61,7 @@
         <section class="plateform-container reveal-vertical">
             <div class="row">
                 <div class="col-md-8">
-                    <img class="platform-device-img" src="../../public/img/platform_device.png" alt="">
+                    <img class="platform-device-img" src="./public/img/platform_device.png" alt="">
                 </div>
                 <!--/.col-md-4-->
 
@@ -83,7 +83,7 @@
                 <!--/.col-md-6-->
 
                 <div class="col-md-6">
-                    <img class="cryptos" src="../../public/img/cryptogames.png" alt="">
+                    <img class="cryptos" src="./public/img/cryptogames.png" alt="">
                 </div>
                 <!--/.col-md-6-->
             </div>
@@ -107,7 +107,7 @@
             <ul id="carousel-comments">
                 <li class="item">
                     <div class="user-profil">
-                        <img class="img-user-female" src="../../public/img/website_-_female_user-512.png" alt="icon user man">
+                        <img class="img-user-female" src="./public/img/website_-_female_user-512.png" alt="icon user man">
                         <p>Antoinette Tarpe</p>
                     </div>
                     <!--/.user-profil-->
@@ -141,7 +141,7 @@
 
                 <li class="item">
                     <div class="user-profil">
-                        <img class="img-user-female" src="../../public/img/website_-_female_user-512.png" alt="icon user man">
+                        <img class="img-user-female" src="./public/img/website_-_female_user-512.png" alt="icon user man">
                         <p>Julie La Fonte</p>
                     </div>
                     <!--/.user-profil-->
@@ -175,7 +175,7 @@
 
                 <li class="item">
                     <div class="user-profil">
-                        <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
+                        <img src="./public/img/user_man_male_profile_account-512.png" alt="icon user man">
                         <p>Jean-Claude Van Damme</p>
                     </div>
                     <!--/.user-profil-->
@@ -212,7 +212,7 @@
 
                 <li class="item">
                     <div class="user-profil">
-                        <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
+                        <img src="./public/img/user_man_male_profile_account-512.png" alt="icon user man">
                         <p>Hubert De Fournier</p>
                     </div>
                     <!--/.user-profil-->
@@ -249,7 +249,7 @@
 
                 <li class="item">
                     <div class="user-profil">
-                        <img src="../../public/img/user_man_male_profile_account-512.png" alt="icon user man">
+                        <img src="./public/img/user_man_male_profile_account-512.png" alt="icon user man">
                         <p>James Watson</p>
                     </div>
                     <!--/.user-profil-->

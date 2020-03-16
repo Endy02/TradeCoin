@@ -27,7 +27,6 @@ if (!empty($listOfRoutes[$uri])) {
         //Vérifier que la class existe et si ce n'est pas le cas faites un die("La class controller n'existe pas")
         if (class_exists($c)) {
             $controller = new $c();
-            
             //Vérifier que la méthode existeet si ce n'est pas le cas faites un die("L'action' n'existe pas")
             if (method_exists($controller, $a)) {
                 //EXEMPLE :

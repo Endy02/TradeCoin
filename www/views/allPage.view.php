@@ -10,26 +10,6 @@
 
     <title>All pages</title>
 </head>
-<body class="body-dashboard">
-
-<header class="header-dashboard">
-
-    <nav class="sidebar-left">
-        <div class="logo">
-            <img src="./public/img/TradeCoin.png" alt="Logo">
-        </div>
-        <ul>
-            <a class="a-nav" href="#Dashboard">Dashboard</a>
-            <a class="a-nav" href="#Cours">Cours</a>
-            <a class="a-nav" href="#Pages">Pages</a>
-            <a class="a-nav" href="#Categories">Categories</a>
-            <a class="a-nav" href="#User">User</a>
-            <a class="a-nav" href="#Apparence">Apparence</a>
-            <a class="a-nav" href="#Tradline">Tradline</a>
-        </ul>
-    </nav>
-
-</header>
 
 <div class="container-dashboard">
 
@@ -260,7 +240,3 @@
 
     </div>
 </div>
-
-<script src="./dist/bundle.js"></script>
-</body>
-</html>
