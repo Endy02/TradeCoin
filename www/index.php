@@ -30,7 +30,6 @@ if (!empty($listOfRoutes[$uri])) {
             
             //Vérifier que la méthode existeet si ce n'est pas le cas faites un die("L'action' n'existe pas")
             if (method_exists($controller, $a)) {
-                
                 //EXEMPLE :
                 //$controller est une instance de la class UserController
                 //$a = userAction est une méthode de la class UserController
