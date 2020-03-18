@@ -1,13 +1,14 @@
 <?php
+namespace Core;
 
 class Autoloader
 {
-    static function autoload_register() {
-        spl_autoload_register([__CLASS__, "autoloader_call"]);
+    static function register() {
+        spl_autoload_register([__CLASS__, "autoload"]);
     }
 
     static function autoloader_call($class)
-    {/**/
+    {
             /*
                 Constant DIRECTOTY-SEPARATOR allow to have the root of all system operator
                 For Windows it's '\' and for all others systems it's '/'

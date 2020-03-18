@@ -1,4 +1,8 @@
 <?php
+namespace Controllers;
+use Core\Validator;
+use Core\View;
+use Models\users;
 
 class UserController
 {
