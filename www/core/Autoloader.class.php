@@ -1,6 +1,7 @@
 <?php
 namespace Core;
 
+/* use autoloader for al classes */
 class Autoloader
 {
     static function register() {
