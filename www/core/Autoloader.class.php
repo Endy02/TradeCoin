@@ -1,5 +1,5 @@
 <?php
-
+/* use autoloader for al classes */
 class Autoloader
 {
     static function autoload_register() {
