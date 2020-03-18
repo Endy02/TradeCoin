@@ -7,7 +7,7 @@ class Autoloader
     }
 
     static function autoloader_call($class)
-    {
+    {/**/
             /*
                 Constant DIRECTOTY-SEPARATOR allow to have the root of all system operator
                 For Windows it's '\' and for all others systems it's '/'
