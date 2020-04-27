@@ -1,5 +1,5 @@
 /:
-  controller: Controllers\default
+  controller: Controllers\user
   action: default
 
 /test/yves:
@@ -8,28 +8,28 @@
 
 /ajout-utilisateur:
   controller: Controllers\user
-  action: "add"
+  action: add
 
 /utilisateur:
   controller: Controllers\user
-  action: "default"
+  action: default
 
 /se-connecter:
   controller: Controllers\user
-  action: "login"
+  action: login
 
 /s-inscrire:
   controller: Controllers\user
-  action: "register"
+  action: register
 
 /mot-de-passe-oublie:
   controller: Controllers\user
-  action: "forgotPwd"
+  action: forgotPwd
 
 /dashboard:
   controller: Controllers\user
-  action: "dashboardBack"
+  action: dashboardBack
 
 /all-page:
   controller: Controllers\user
-  action: "allPage"
+  action: allPage

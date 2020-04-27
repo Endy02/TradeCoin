@@ -8,7 +8,8 @@ class UserController
 {
     public function defaultAction()
     {
-        echo "User default";
+        $user = array("id"=>1,"firstname"=>"Harry","lastname"=>"coverre","email"=>"harry.coverre@bonduel.com","pwd"=>"bonduel78","status"=>"online");
+        var_dump($user);
     }
 
     public function addAction()
