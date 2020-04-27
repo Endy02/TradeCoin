@@ -20,5 +20,4 @@ class Autoloader
                 include $_SERVER['DOCUMENT_ROOT']."/models/". $class .".model.php";
             }
     }
-
 }
