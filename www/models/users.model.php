@@ -23,6 +23,7 @@ class users extends DB
         $this->setEmail($attributsUser['email']);
         $this->setPwd($attributsUser['pwd']);
         $this->setStatus($attributsUser['status']);
+
     }
 
 
