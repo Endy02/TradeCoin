@@ -15,6 +15,18 @@ class users extends DB
         parent::__construct();
     }
 
+    public function hydrate (array $attributsUser){
+
+        $this->setId($attributsUser['id']);
+        $this->setFirstname($attributsUser['firstName']);
+        $this->setLastname($attributsUser['lastName']);
+        $this->setEmail($attributsUser['email']);
+        $this->setPwd($attributsUser['pwd']);
+        $this->setStatus($attributsUser['status']);
+    }
+
+
+
     public function setId($id)
     {
         $this->id=$id;
