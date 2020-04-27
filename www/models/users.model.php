@@ -189,6 +189,19 @@ class users extends DB
                 ];
     }
 
+    /* Fonction si on utilise le namespace avec model.php
+    public function hydrate(array $data)
+    {
+        foreach ( $data as $key => $value)
+        {
+            $getData = 'set'.ucfirst($key);
+            echo $key.$data;
+            if (method_exists($this, $getData))
+            {
+                $this->$getData($value);
+            }
+        }
+    }*/
 
 }
 

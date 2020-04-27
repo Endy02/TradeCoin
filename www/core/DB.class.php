@@ -18,7 +18,6 @@ class DB
         $this->table =  DB_PREFIXE.get_called_class();
     }
 
-
     public function save()
     {
         $propChild = get_object_vars($this);
