@@ -17,12 +17,14 @@ class users extends DB
 
     public function hydrate (array $attributsUser){
 
-        $this->setId($attributsUser['id']);
-        $this->setFirstname($attributsUser['firstName']);
-        $this->setLastname($attributsUser['lastName']);
-        $this->setEmail($attributsUser['email']);
-        $this->setPwd($attributsUser['pwd']);
-        $this->setStatus($attributsUser['status']);
+        foreach ($attributsUser as $key => $attribut)
+        {
+            $appelMethode = 'set'.$key;
+
+            if (method_exists($this, $appelMethode)) {
+                $this->$appelMethode($attribut);
+            }
+        }
 
     }
 
