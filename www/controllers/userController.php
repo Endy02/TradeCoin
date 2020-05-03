@@ -70,3 +70,4 @@ class UserController
         $myView = new View("allPage", "back");
     }
 }
+
