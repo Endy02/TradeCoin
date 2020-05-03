@@ -1,7 +1,7 @@
 <?php
 use Core\Autoloader;
 use Core\ConstantLoader;
-require './core/Autoloader.class.php';
+require './core/Autoloader.php';
 Autoloader::register();
 
 session_start();
