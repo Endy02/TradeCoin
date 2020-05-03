@@ -16,10 +16,10 @@ class Autoloader
              */
             $class = str_replace("\\", DIRECTORY_SEPARATOR, $class);
 
-            if (file_exists("core/".$class.".class.php")) {
-                require $_SERVER['DOCUMENT_ROOT'].'/core/'.$class.".class.php";
-            } elseif (file_exists("models/".$class.".model.php")) {
-                include $_SERVER['DOCUMENT_ROOT']."/models/". $class .".model.php";
+            if (file_exists("core/".$class.".php")) {
+                require $_SERVER['DOCUMENT_ROOT'].'/core/'.$class.".php";
+            } elseif (file_exists("models/".$class.".php")) {
+                include $_SERVER['DOCUMENT_ROOT']."/models/". $class .".php";
             }
     }
 
