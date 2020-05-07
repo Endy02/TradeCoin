@@ -1,5 +1,5 @@
 /:
-  controller: Controllers\user
+  controller: Controllers\default
   action: default
 
 /test/yves:
