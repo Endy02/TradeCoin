@@ -2,10 +2,6 @@
   controller: Controllers\default
   action: default
 
-/test/yves:
-  controller: Conrollers\default
-  action: default
-
 /ajout-utilisateur:
   controller: Controllers\user
   action: add
@@ -27,9 +23,45 @@
   action: forgotPwd
 
 /dashboard:
-  controller: Controllers\user
+  controller: Controllers\action
   action: dashboardBack
 
 /all-page:
-  controller: Controllers\user
+  controller: Controllers\action
   action: allPage
+
+/single-page:
+  controller: Controllers\action
+  action: singlePage
+
+/add-page:
+  controller: Controllers\action
+  action: addPage
+
+/all-courses:
+  controller: Controllers\action
+  action: allCourses
+
+/single-courses:
+  controller: Controllers\action
+  action: singleCourses
+
+/apparence-theme:
+  controller: Controllers\action
+  action: apparenceTheme
+
+/apparence-setting:
+  controller: Controllers\action
+  action: apparenceSettings
+
+/apparence-widget:
+  controller: Controllers\action
+  action: apparenceWidget
+
+/tradline:
+  controller: Controllers\action
+  action: tradline
+
+/settings:
+  controller: Controllers\action
+  action: settings

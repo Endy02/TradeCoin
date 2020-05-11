@@ -60,14 +60,4 @@ class UserController
     {
         $myView = new View("forgotPwd", "account");
     }
-
-    public function dashboardBackAction()
-    {
-        $myView = new View("dashboard", "back");
-    }
-
-    public function allPageAction()
-    {
-        $myView = new View("allPage", "pages");
-    }
 }
