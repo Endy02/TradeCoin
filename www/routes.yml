@@ -46,6 +46,26 @@
   controller: Controllers\action
   action: singleCourses
 
+/all-user:
+  controller: Controllers\action
+  action: allUser
+
+/add-user:
+  controller: Controllers\action
+  action: addUser
+
+/user:
+  controller: Controllers\action
+  action: user
+
+/role:
+  controller: Controllers\action
+  action: userRole
+
+/permission:
+  controller: Controllers\action
+  action: userPermission
+
 /apparence-theme:
   controller: Controllers\action
   action: apparenceTheme
