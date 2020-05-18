@@ -46,18 +46,106 @@ class DB
         $queryPrepared->execute($columnsData);
     }
 
-    public function find(int $id): ?Models\model
+    public function find(int $id): ?\Models\model
     {
-        $sql = "SELECT * FROM" . $this->table . "WHERE id = id";
+        $sql = "SELECT * FROM $this->table WHERE id = :id";
         $queryPrepared = $this->pdo->prepare($sql);
-        $queryExecute = $queryPrepared->execute();
+        $queryPrepared->execute(['id' => $id]);
+        $result = $queryPrepared->fetch();
+        $obj = new $this->class();
+        $obj->hydrate($result);
+
+        return $obj;
     }
 
-    public function findAll()
+    public function findAll(): array
     {
-        $sql = "SELECT * FROM" . $this->table;
+        $sql = "SELECT * FROM $this->table";
         $queryPrepared = $this->pdo->prepare($sql);
         $queryPrepared->execute();
-        $queryPrepared->fetchAll()
+        $rows = $queryPrepared->fetchAll();
+
+        $results = array();
+
+        foreach ($rows as $row )
+        {
+            $obj = new $this->class();
+            array_push($results, $obj->hydrate($row) );
+        }
+
+        return $results;
+    }
+
+    public function findBy(array $params, array $order = null): ?array
+    {
+        $results = array();
+
+        $sql = "SELECT * FROM $this->table WHERE";
+
+        foreach ($params as $key => $value)
+        {
+            if (is_string($value)) {
+                $comparator = "LIKE";
+            } else {
+                $comparator = "=";
+            }
+
+            $sql .= "$key $comparator : $key and";
+            $params[":$key"] = $value;
+            unset($params[$key]);
+        }
+
+        $sql = rtrim($sql, "and");
+
+        if ($order) {
+            $sql .= "ORDER BY " .key[$order]. " " .$order[key($order)];
+        }
+
+        $queryPrepared = $this->pdo->prepare($sql);
+        $queryPrepared->execute();
+        $rows = $queryPrepared->fetchAll();
+
+        foreach ($rows as $row )
+        {
+            $obj = new $this->class();
+            array_push($results, $obj->hydrate($row) );
+        }
+
+        return $results;
+    }
+
+    public function count(array $params): int
+    {
+        $sql = "SELECT COUNT(*) FROM $this->table WHERE";
+
+        foreach ($params as $key => $value)
+        {
+            if (is_string($value)) {
+                $comparator = "LIKE";
+            } else {
+                $comparator = "=";
+            }
+
+            $sql .= "$key $comparator : $key and";
+            $params[":$key"] = $value;
+            unset($params[$key]);
+        }
+
+        $sql = rtrim($sql, "and");
+
+        $queryPrepared = $this->pdo->prepare($sql);
+        $queryPrepared->execute();
+        $result = $queryPrepared->fetchAll();
+
+        return $result->fetchColumn();
+    }
+
+    public function delete(int $id): bool
+    {
+        $sql = "DELETE FROM $this->table WHERE id = $id";
+        $queryPrepared = $this->pdo->prepare($sql);
+        $queryPrepared->execute(['id' => $id]);
+
+        return true;
     }
 }
