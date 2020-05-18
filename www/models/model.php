@@ -1,32 +1,24 @@
 <?php
-
 namespace Models;
+use Managers\userManager;
 
-class Model
+class model extends userManager
 {
-
-    public function __toArray(): array
+    public function _toArray()
     {
         $property = get_object_vars($this);
-
         return $property;
     }
 
-    public function hydrate(array $row)
+    public function hydrate(array $donnes)
     {
-        $className = get_class($this);
-        $articleObj = new $className;
+        foreach ($donnes as $key => $value){
 
-        foreach ($row as $key => $value)
-        {
-            $method = 'set'.$key;
+            $method = 'set'.ucfirst($key);
 
-            if (method_exists($articleObj, $method))
-            {
-                $articleObj->$method($value);
+            if(method_exists($this, $method)){
+                $this->$method($value);
             }
         }
-
-        return $articleObj;
     }
 }
