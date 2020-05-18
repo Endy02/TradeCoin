@@ -25,7 +25,7 @@ if (!empty($listOfRoutes[$uri])) {
     
     $pathController = "controllers/".$path[1].".class.php";
 
-    if (!file_exists($pathController)) {
+    if (file_exists($pathController)) {
 
         include $pathController;
         //Vérifier que la class existe et si ce n'est pas le cas faites un die("La class controller n'existe pas")
