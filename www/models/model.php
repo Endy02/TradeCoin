@@ -1,12 +1,14 @@
 <?php
-
-
 namespace Models;
-use Core\DB;
+use Managers\userManager;
 
-class model extends DB
+class model extends userManager
 {
-
+    public function _toArray()
+    {
+        $property = get_object_vars($this)
+        return $property;
+    }
 
     public function hydrate(array $donnes)
     {
@@ -19,4 +21,6 @@ class model extends DB
             }
         }
     }
+
+
 }

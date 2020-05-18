@@ -45,4 +45,19 @@ class DB
         $queryPrepared = $this->pdo->prepare($sql);
         $queryPrepared->execute($columnsData);
     }
+
+    public function find(int $id): ?Models\model
+    {
+        $sql = "SELECT * FROM" . $this->table . "WHERE id = id";
+        $queryPrepared = $this->pdo->prepare($sql);
+        $queryExecute = $queryPrepared->execute();
+    }
+
+    public function findAll()
+    {
+        $sql = "SELECT * FROM" . $this->table;
+        $queryPrepared = $this->pdo->prepare($sql);
+        $queryPrepared->execute();
+        $queryPrepared->fetchAll()
+    }
 }

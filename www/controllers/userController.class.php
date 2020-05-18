@@ -12,6 +12,11 @@ class UserController
         var_dump($user);
     }
 
+    public function getAction()
+    {
+        UserM
+    }
+
     public function addAction()
     {
         echo "User add";
