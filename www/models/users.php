@@ -1,9 +1,12 @@
 <?php
-namespace Models;
-use Core\helpers;
-use Models\model;
 
-class users extends model
+namespace App\Models;
+
+use App\Core\Model;
+use App\Core\helpers;
+use JSONSerializable;
+
+class users extends Model implements JSONSerializable
 {
     protected $id;
     protected $firstname;
@@ -12,105 +15,43 @@ class users extends model
     protected $pwd;
     protected $status;
 
+
     public function __construct()
     {
         parent::__construct();
     }
 
-    /**
-     * @return mixed
-     */
+    public function jsonSerialize() {
+        return $this->__toArray();
+    }
+
+    public function setId($id)
+    {
+        $this->id=$id;
+    }
     public function getId()
     {
         return $this->id;
     }
-
-    /**
-     * @param mixed $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getFirstname()
-    {
-        return $this->firstname;
-    }
-
-    /**
-     * @param mixed $firstname
-     */
     public function setFirstname($firstname)
     {
-        $this->firstname = $firstname;
+        $this->firstname=ucwords(strtolower(trim($firstname)));
     }
-
-    /**
-     * @return mixed
-     */
-    public function getLastname()
-    {
-        return $this->lastname;
-    }
-
-    /**
-     * @param mixed $lastname
-     */
     public function setLastname($lastname)
     {
-        $this->lastname = $lastname;
+        $this->lastname=strtoupper(trim($lastname));
     }
-
-    /**
-     * @return mixed
-     */
-    public function getEmail()
-    {
-        return $this->email;
-    }
-
-    /**
-     * @param mixed $email
-     */
     public function setEmail($email)
     {
-        $this->email = $email;
+        $this->email=strtolower(trim($email));
     }
-
-    /**
-     * @return mixed
-     */
-    public function getPwd()
-    {
-        return $this->pwd;
-    }
-
-    /**
-     * @param mixed $pwd
-     */
     public function setPwd($pwd)
     {
-        $this->pwd = $pwd;
+        $this->pwd=$pwd;
     }
-
-    /**
-     * @return mixed
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
-     * @param mixed $status
-     */
     public function setStatus($status)
     {
-        $this->status = $status;
+        $this->status=$status;
     }
 
     public static function getRegisterForm(){
@@ -158,8 +99,7 @@ class users extends model
                     "placeholder"=>"Votre mot de passe",
                     "class"=>"form-control form-control-user",
                     "id"=>"",
-                    "required"=>true,
-                    "errorMsg"=>"Votre mot de passe doit faire entre 6 et 20 caractères avec une minuscule et une majuscule"
+                    "required"=>true
                 ],
                 "pwdConfirm"=>[
                     "type"=>"password",
@@ -169,19 +109,24 @@ class users extends model
                     "required"=>true,
                     "confirmWith"=>"pwd",
                     "errorMsg"=>"Votre mot de passe de confirmation ne correspond pas"
+                ],
+                "captcha"=>[
+                    "type"=>"captcha",
+                    "class"=>"form-control form-control-user",
+                    "id"=>"",
+                    "required"=>true,
+                    "placeholder"=>"Veuillez saisir les caractères",
+                    "errorMsg"=>"Captcha incorrect"
                 ]
-                /*"captcha"=>[
-                        "type"=>"captcha",
-                        "class"=>"form-control form-control-user",
-                        "id"=>"",
-                        "required"=>true,
-                        "placeholder"=>"Veuillez saisir les caractères",
-                        "errorMsg"=>"Captcha incorrect"
-                    ]*/
             ]
         ];
     }
 
-    public function getLoginForm()
-    {}
+    public static function getLoginForm(){
+        return [
+
+        ];
+    }
+
+
 }

@@ -1,35 +1,66 @@
 <?php
-namespace Controllers;
-use Core\Validator;
-use Core\View;
-use Models\users;
+
+namespace App\Controllers;
+
+use App\Core\View;
+use App\Core\Validator;
+use App\Models\users;
+use App\Core\Manager;
+use App\Managers\UserManager;
 
 class UserController
 {
     public function defaultAction()
     {
-        $user = array("id"=>1,"firstname"=>"Harry","lastname"=>"coverre","email"=>"harry.coverre@bonduel.com","pwd"=>"bonduel78","status"=>"online");
-        var_dump($user);
-    }
+        $userManager = new UserManager();
 
-    public function getAction()
-    {
-        //todo UserM
+        /*
+        find
+        $userManager->find(1);
+
+        findBy
+        var_dump($userManager->findBy(["firstname" => "Valentine"], ["id" => "desc"]));
+
+        count
+        echo $userManager->count(["firstName" => "Valentine"]);
+
+        findAll
+        var_dump($userManager->findAll());
+
+        delete
+
+        var_dump($userManager->delete(1));
+        */
+
     }
 
     public function addAction()
     {
         echo "User add";
+        $userManager = new UserManager();
+        $user = new users();
+
+        $user->setId(2);
+        $user->setFirstname("Joe");
+        $user->setLastname("Skrzypczyk");
+        $user->setEmail("Y.Skrzypczyk@GMAIL.com");
+        $user->setPwd("Test1234");
+        $user->setStatus(0);
+
+        $userManager->save($user);
+
     }
 
-    public function removeAction()
+    public function removeAction($id)
     {
+        $userManager = new UserManager();
         echo "L'utilisateur va être supprimé";
+        $userManager->delete($id);
     }
 
     public function loginAction()
     {
-        $myView = new View("dashboard", "back");
+        $myView = new View("login", "account");
     }
 
     public function registerAction()
@@ -42,19 +73,20 @@ class UserController
             $errors = Validator::checkForm($configFormUser ,$_POST);
             //Insertion ou erreurs
             print_r($errors);
-        }
 
-        //Insertion d'un user
-        /*
-        $user = new users();
-        $user->setId(1);
-        $user->setFirstname("Toto");
-        $user->setLastname("Skrzypczyk");
-        $user->setEmail("Y.Skrzypczyk@GMAIL.com");
-        $user->setPwd("Test1234");
-        $user->setStatus(0);
-        $user->save();
-        */
+            if (empty($errors)) {
+                $data = $_SESSION['register_data'];
+                $user = new users();
+
+                $user->setId(1);
+                $user->setFirstname("Toto");
+                $user->setLastname("Skrzypczyk");
+                $user->setEmail("Y.Skrzypczyk@GMAIL.com");
+                $user->setPwd("Test1234");
+                $user->setStatus(0);
+                $user->save($user);
+            }
+        }
 
 
         $myView = new View("register", "account");
@@ -66,13 +98,14 @@ class UserController
         $myView = new View("forgotPwd", "account");
     }
 
-    public function dashboardBackAction()
+    public function getFirstUserAction()
     {
-        $myView = new View("dashboard", "back");
-    }
+        $userManager = new UserManager();
 
-    public function allPageAction()
-    {
-        $myView = new View("allPage", "pages");
+        $users = $userManager->findAll();
+        $firstUser = json_encode($users[0], JSON_PRETTY_PRINT);
+
+        echo $firstUser;
+        return $firstUser;
     }
 }
