@@ -25,7 +25,8 @@ if (!empty($listOfRoutes[$uri])) {
     
     $pathController = "controllers/".$path[1].".class.php";
 
-    if (file_exists($pathController)) {
+    if (!file_exists($pathController)) {
+
         include $pathController;
         //Vérifier que la class existe et si ce n'est pas le cas faites un die("La class controller n'existe pas")
 	    if (class_exists($c)) {
@@ -45,7 +46,8 @@ if (!empty($listOfRoutes[$uri])) {
             die("La class controller n'existe pas");
         }
     } else {
-        die("Le fichier controller n'existe pas");
+        throw new ErrorException("le fichier controller n'existe pas");
+        /*die("Le fichier controller n'existe pas");*/
     }
 } else {
     die("L'url n'existe pas : Erreur 404");

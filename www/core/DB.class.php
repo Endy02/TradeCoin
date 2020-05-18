@@ -48,6 +48,7 @@ class DB
 
     public function find(int $id): ?\Models\model
     {
+
         $sql = "SELECT * FROM $this->table WHERE id = :id";
         $queryPrepared = $this->pdo->prepare($sql);
         $queryPrepared->execute(['id' => $id]);
