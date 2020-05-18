@@ -112,6 +112,7 @@ class DB
         }
 
         return $results;
+
     }
 
     public function count(array $params): int
