@@ -1,7 +1,19 @@
 <?php
 
-class UserController
+class UserController extends DB
 {
+
+
+    public function __construct()
+    {
+        parent::__construct(User::class, 'users');
+    }
+
+
+
+
+
+
     public function defaultAction()
     {
         echo "User default";
@@ -58,4 +70,19 @@ class UserController
     {
         $myView = new View("forgotPwd", "account");
     }
+
+    public function getAction($params){
+
+        $userManager = new UserManager();
+        $user = $userManager->find($params['id']);
+        $users = $userManager->findAll();
+
+        $partialUsers = $userManager->findBy(['firstname' => "Mayeul"], ['id' => 'desc']);
+        $count = $userManager->count(['firstname' => "Mayeul"]);
+
+        echo 'getUser';
+
+
+    }
+
 }
