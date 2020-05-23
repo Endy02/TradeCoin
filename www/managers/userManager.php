@@ -9,4 +9,10 @@ class userManager extends DB
     {
         parent::__construct(users::class, "users");
     }
+
+    public function getUserAdmin()
+    {
+
+    }
+
 }
