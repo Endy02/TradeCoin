@@ -5,12 +5,10 @@ namespace Models;
 use App\Core\Model;
 use App\Models\users;
 
-class Post extends Model
+class posts extends Model
 {
     protected $id;
-
     protected $title;
-
     protected $author;
 
     public function setId(int $id)

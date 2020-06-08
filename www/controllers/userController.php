@@ -2,61 +2,60 @@
 
 namespace App\Controllers;
 
-use App\Core\View;
-use App\Core\Validator;
-use App\Models\users;
-use App\Core\Manager;
-use App\Managers\UserManager;
+use App\Core\Exceptions\NotFoundException;
+use App\Forms\RegisterType;
+use App\Managers\PostManager;
+use Controllers\DefaultController;
+use Core\View;
+use Managers\userManager;
 
-class UserController
+class UserController extends DefaultController
 {
     public function defaultAction()
     {
-        $userManager = new UserManager();
-
-        /*
-        find
-        $userManager->find(1);
-
-        findBy
-        var_dump($userManager->findBy(["firstname" => "Valentine"], ["id" => "desc"]));
-
-        count
-        echo $userManager->count(["firstName" => "Valentine"]);
-
-        findAll
-        var_dump($userManager->findAll());
-
-        delete
-
-        var_dump($userManager->delete(1));
-        */
-
+        echo "User default";
     }
 
     public function addAction()
     {
         echo "User add";
-        $userManager = new UserManager();
-        $user = new users();
-
-        $user->setId(2);
-        $user->setFirstname("Joe");
-        $user->setLastname("Skrzypczyk");
-        $user->setEmail("Y.Skrzypczyk@GMAIL.com");
-        $user->setPwd("Test1234");
-        $user->setStatus(0);
-
-        $userManager->save($user);
-
     }
 
-    public function removeAction($id)
+    public function getUserPostAction(array $params)
+    {
+        $postManager = new postManager();
+
+        $post = $postManager->getUserPost($params['id']);
+
+        echo '<pre>';
+        var_dump($post);
+    }
+
+    public function getAction($params)
     {
         $userManager = new UserManager();
-        echo "L'utilisateur va être supprimé";
-        $userManager->delete($id);
+
+        $user = $userManager->find($params['id']);
+
+
+        if(!$user) {
+            throw new NotFoundException("User not found");
+        }
+
+        $users = $userManager->findAll();
+
+        $partialUsers = $userManager->findBy(['firstname' => "Fadyl%"], ['id' => 'desc']);
+
+        $userManager->delete(5);
+
+        echo "get user";
     }
+
+    public function removeAction()
+    {
+        echo "L'utilisateur va être supprimé";
+    }
+
 
     public function loginAction()
     {
@@ -66,46 +65,37 @@ class UserController
     public function registerAction()
     {
 
-        $configFormUser = users::getRegisterForm();
+        //$configFormUser = users::getRegisterForm();
 
         if($_SERVER["REQUEST_METHOD"] == "POST"){
             //Vérification des champs
-            $errors = Validator::checkForm($configFormUser ,$_POST);
+            //$errors = Validator::checkForm($configFormUser ,$_POST);
             //Insertion ou erreurs
-            print_r($errors);
-
-            if (empty($errors)) {
-                $data = $_SESSION['register_data'];
-                $user = new users();
-
-                $user->setId(1);
-                $user->setFirstname("Toto");
-                $user->setLastname("Skrzypczyk");
-                $user->setEmail("Y.Skrzypczyk@GMAIL.com");
-                $user->setPwd("Test1234");
-                $user->setStatus(0);
-                $user->save($user);
-            }
+            // print_r($errors);
         }
 
+        //Insertion d'un user
+        /*
+        $user = new users();
+        $user->setId(1);
+        $user->setFirstname("Toto");
+        $user->setLastname("Skrzypczyk");
+        $user->setEmail("Y.Skrzypczyk@GMAIL.com");
+        $user->setPwd("Test1234");
+        $user->setStatus(0);
+        $user->save();
+        */
 
-        $myView = new View("register", "account");
-        $myView->assign("configFormUser", $configFormUser);
+        $registerType = new RegisterType();
+
+        $this->render("register", "account", [
+            "configFormUser" => $registerType
+        ]);
+
     }
 
     public function forgotPwdAction()
     {
-        $myView = new View("forgotPwd", "account");
-    }
-
-    public function getFirstUserAction()
-    {
-        $userManager = new UserManager();
-
-        $users = $userManager->findAll();
-        $firstUser = json_encode($users[0], JSON_PRETTY_PRINT);
-
-        echo $firstUser;
-        return $firstUser;
+        //$myView = new View("forgotPwd", "account");
     }
 }

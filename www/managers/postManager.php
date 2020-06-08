@@ -4,7 +4,7 @@ namespace App\Managers;
 
 use App\Core\Manager;
 use App\Core\Connection\QueryBuilder;
-use App\Models\posts;
+use Models\posts;
 
 class PostManager extends Manager {
 
