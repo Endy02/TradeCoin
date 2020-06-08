@@ -1,27 +1,27 @@
 <?php
-namespace Managers;
-use App\Core\Connection\QueryBuilder;
-use Core\DB;
-use Models\users;
 
-class postManager extends DB
-{
+namespace App\Managers;
+
+use App\Core\Manager;
+use App\Core\Connection\QueryBuilder;
+use App\Models\posts;
+
+class PostManager extends Manager {
+
     public function __construct()
     {
-        parent::__construct(users::class, "users");
+        parent::__construct(posts::class, 'posts');
     }
 
     public function getUserPost(int $id)
     {
-        return (new QueryBuilder())
+        return (new QueryBuilder($this->getConnection()))
             ->select('p.*, u.*')
-            ->from('nfoz_post', 'p')
-            ->join('nfoz_users','u')
+            ->from('nfoz_posts', 'p')
+            ->join('nfoz_users', 'u')
             ->where('p.author = :iduser')
             ->setParameter('iduser', $id)
             ->getQuery()
-            ->getArrayResult(Post::class)
-            ;
+            ->getArrayResult(posts::class);
     }
-
 }
