@@ -21,7 +21,7 @@ class UserController extends DefaultController
         echo "User add";
     }
 
-    public function getUserPostAction(array $params)
+    public function getPostsAction(array $params)
     {
         $postManager = new postManager();
 
