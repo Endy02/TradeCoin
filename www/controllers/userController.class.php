@@ -1,10 +1,15 @@
 <?php
+namespace Controllers;
+use Core\Validator;
+use Core\View;
+use Models\users;
 
 class UserController
 {
     public function defaultAction()
     {
-        echo "User default";
+        $user = array("id"=>1,"firstname"=>"Harry","lastname"=>"coverre","email"=>"harry.coverre@bonduel.com","pwd"=>"bonduel78","status"=>"online");
+        var_dump($user);
     }
 
     public function addAction()
@@ -17,12 +22,9 @@ class UserController
         echo "L'utilisateur va être supprimé";
     }
 
-
-
-
     public function loginAction()
     {
-        $myView = new View("login", "account");
+        $myView = new View("dashboard", "back");
     }
 
     public function registerAction()
@@ -57,10 +59,5 @@ class UserController
     public function forgotPwdAction()
     {
         $myView = new View("forgotPwd", "account");
-    }
-
-    public function dashboardBackAction()
-    {
-        $myView = new View("dashboard", "back");
     }
 }

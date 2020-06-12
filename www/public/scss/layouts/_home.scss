@@ -21,6 +21,10 @@ nav {
   font-size: .90em;
 }
 
+.user-logo {
+  display: none !important;
+}
+
 .navbar-content-end .navbar-item:first-child,
 .navbar-content-end .navbar-item:nth-child(3) {
   padding-top: 35px;
@@ -132,6 +136,7 @@ nav {
 /* ---------------------------------------------------------------------------- */
 
 section.free-container {
+  margin-top: 12rem;
   padding-bottom: 4rem;
   .free-content {
     h2 {
@@ -206,7 +211,6 @@ section.reviews {
 /* ---------------------------------------------------------------------------- */
                                 /* FOOTER HOME */
 /* ---------------------------------------------------------------------------- */
-
 
 .account-user-link {
   padding: 0 5em;

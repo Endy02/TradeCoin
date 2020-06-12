@@ -1,4 +1,6 @@
 <?php
+namespace Core;
+
 class DB
 {
     private $table;
@@ -15,7 +17,6 @@ class DB
 
         $this->table =  DB_PREFIXE.get_called_class();
     }
-
 
     public function save()
     {

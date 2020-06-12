@@ -13,10 +13,6 @@
 
               <?php $this->addModal("form", $configFormUser );?>
 
-
-              
-
-
               <hr>
               <div class="text-center">
                 <a class="small" href="<?= helpers::getUrl("user", "forgotPwd")?>">Forgot Password?</a>

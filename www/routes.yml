@@ -1,31 +1,87 @@
 /:
-  controller: default
-  action: default
-
-/test/yves:
-  controller: default
+  controller: Controllers\default
   action: default
 
 /ajout-utilisateur:
-  controller: "user"
-  action: "add"
+  controller: Controllers\user
+  action: add
 
 /utilisateur:
-  controller: "user"
-  action: "default"
+  controller: Controllers\user
+  action: default
 
 /se-connecter:
-  controller: "user"
-  action: "login"
+  controller: Controllers\user
+  action: login
 
 /s-inscrire:
-  controller: "user"
-  action: "register"
+  controller: Controllers\user
+  action: register
 
 /mot-de-passe-oublie:
-  controller: "user"
-  action: "forgotPwd"
+  controller: Controllers\user
+  action: forgotPwd
 
 /dashboard:
-  controller: "user"
-  action: "dashboardBack"
+  controller: Controllers\action
+  action: dashboardBack
+
+/all-page:
+  controller: Controllers\action
+  action: allPage
+
+/single-page:
+  controller: Controllers\action
+  action: singlePage
+
+/add-page:
+  controller: Controllers\action
+  action: addPage
+
+/all-courses:
+  controller: Controllers\action
+  action: allCourses
+
+/single-courses:
+  controller: Controllers\action
+  action: singleCourses
+
+/all-user:
+  controller: Controllers\action
+  action: allUser
+
+/add-user:
+  controller: Controllers\action
+  action: addUser
+
+/user:
+  controller: Controllers\action
+  action: user
+
+/role:
+  controller: Controllers\action
+  action: userRole
+
+/permission:
+  controller: Controllers\action
+  action: userPermission
+
+/apparence-theme:
+  controller: Controllers\action
+  action: apparenceTheme
+
+/apparence-setting:
+  controller: Controllers\action
+  action: apparenceSettings
+
+/apparence-widget:
+  controller: Controllers\action
+  action: apparenceWidget
+
+/tradline:
+  controller: Controllers\action
+  action: tradline
+
+/settings:
+  controller: Controllers\action
+  action: settings
