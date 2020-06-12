@@ -78,9 +78,9 @@
   controller: Controllers\action
   action: apparenceWidget
 
-/tradline:
+/tradeline:
   controller: Controllers\action
-  action: tradline
+  action: tradeline
 
 /settings:
   controller: Controllers\action

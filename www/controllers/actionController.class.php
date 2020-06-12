@@ -86,9 +86,9 @@ class ActionController
     }
 
     //Tradeline
-    public function tradlineAction()
+    public function tradelineAction()
     {
-        $myView = new View("tradline", "tradline");
+        $myView = new View("tradeline", "tradeline");
     }
 
     //Parametres
