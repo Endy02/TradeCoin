@@ -37,7 +37,7 @@
 
         <h1>Dashboard</h1>
 
-        <div class="row-dashboard">
+        <div class="row-10">
             <div class='grid-14'>
                 <div class='histo'>
                     <div class="title-histo">
@@ -88,7 +88,7 @@
             </div>
         </div>
 
-        <div class="row-dashboard">
+        <div class="row-10">
             <div class="grid-14">
                 <div class="stat-header">
                     <div class="time">
@@ -109,7 +109,7 @@
             </div>
         </div>
 
-        <div class="row-dashboard">
+        <div class="row-10">
             <div class='grid-14'>
                 <div class='stat'>
                     <canvas id="myChart" width="1200px" height="170px"></canvas>
@@ -123,7 +123,7 @@
             </div>
         </div>
 
-        <div class="row-dashboard">
+        <div class="row-10">
             <div class='grid-4'>
                 <div class='box'>
                     <h3 class="courses-rating">Courses rating</h3>

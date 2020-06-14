@@ -73,12 +73,21 @@ footer {
 }
 
 /* ---------------------------------------------------------------------------- */
-                                /* GRID */
+                                /* GRID & ROW */
 /* ---------------------------------------------------------------------------- */
 
 @for $i from 1 through 14 {
   .grid-#{$i} {
     width: 100px*$i;
+  }
+}
+
+@for $i from 1 through 14 {
+  .row-#{$i} {
+    width: 10%*$i;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
