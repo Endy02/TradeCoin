@@ -1,3 +1,45 @@
+/* Nav tableau*/
+
+.page-nav {
+  list-style-type: none;
+  margin: 10px 10px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E2E2E2;
+  border-bottom:  2px solid #C4C4C4;
+}
+
+.pnav {
+  float: left;
+}
+
+.pnav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+
+.pnav a:hover {
+  background-color: #C4C4C4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#cercle {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background: white;
+  color: black;
+}
+
+/* Fin Nav Tableau */
+
 .table-all {
   background-color: #fff;
   width: 100%;

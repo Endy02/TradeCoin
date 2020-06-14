@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Saira:400,500,600,700&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+
+
+/* Nav droite et gauche*/
+.logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 50%;
+  height: auto;
+  text-align: center;
+}
+
+.setting-nav {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+}
+
+.menu-horizontal-barre{
+  width: 50%;
+  color: white;
+  size: 0.5px;
+  align-items: center;
+}
+/*Fin nav droite et gauche*/
+
+.page-nav {
+  list-style-type: none;
+  margin: 10px 10px 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #E2E2E2;
+  border-bottom:  2px solid #C4C4C4;
+}
+
+.pnav {
+  float: left;
+}
+
+.pnav a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 30px;
+  text-decoration: none;
+}
+
+.pnav a:hover {
+  background-color: #C4C4C4;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#cercle {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 100px;
+  background: white;
+  color: black;
+}
+
+body{
+  margin: 0;
+  background-color: #E2E2E2;
+  font-family: 'Saira', sans-serif;
+  font-weight: 600;
+}
+
+.container{
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.some-page-wrapper {
+  margin: 10px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+.histo {
+  background-color: white;
+  height: 400px;
+  border-radius: 10px;
+  margin: 20px 10px 0;
+  padding-left: 0px;
+}
+
+.box{
+  background-color: white;
+  height: 100px;
+  border-radius: 10px;
+  margin: 20px 10px 0;
+  padding-left: 10px;
+}
+
+/*Tableau de page*/
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Déclaration des styles md*/
+
+.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-6,.col-md-12{
+  flex-basis: 100%;
+  width: 100%;
+  padding: 0 10px; /* La moitié de la gouttière */
+}
+
+/*Controler les flottants*/
+.clearfix::after{
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/*Controle de la marge des enfants*/
+.clearfix::before{
+  content: '';
+  display: table;
+}

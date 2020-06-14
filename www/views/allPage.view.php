@@ -37,7 +37,36 @@
 
         <h1>All pages</h1>
 
-        <div class="row-dashboard">
+        <div class="row-10">
+
+            <div class='grid-4'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-4'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-4'>
+                <div class='box'>
+
+                </div>
+            </div>
+        </div>
+
+        <ul class="page-nav">
+            <li class="pnav"><a href="#home">Public <div id="cercle">15</div></a></li>
+            <li class="pnav"><a href="#news">Private <div id="cercle">15</div></a></li>
+            <li class="pnav"><a href="#contact">Draft <div id="cercle">15</div></a></li>
+            <li class="pnav"><a href="#about">Trash <div id="cercle">15</div></a></li>
+        </ul>
+
+        <div class="row-10">
+            <div class="grid-14">
             <table class="table-all">
                 <thead class="thead-all">
                     <tr>
@@ -257,7 +286,7 @@
             </table>
         </div>
 
-
+        </div>
     </div>
 </div>
 
