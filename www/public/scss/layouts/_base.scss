@@ -76,6 +76,12 @@ footer {
                                 /* COLUMN SIZE */
 /* ---------------------------------------------------------------------------- */
 
+@for $i from 1 through 14 {
+  .grid-#{$i} {
+    width: 100px*$i;
+  }
+}
+
 .col-md-12 {
     position: relative;
     width: 100%;

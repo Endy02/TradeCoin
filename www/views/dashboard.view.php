@@ -38,7 +38,7 @@
         <h1>Dashboard</h1>
 
         <div class="row-dashboard">
-            <div class='column'>
+            <div class='grid-14'>
                 <div class='histo'>
                     <div class="title-histo">
                         <img class="background-historique" src="public/img/background_historique.jpg">
@@ -89,7 +89,7 @@
         </div>
 
         <div class="row-dashboard">
-            <div class="column">
+            <div class="grid-14">
                 <div class="stat-header">
                     <div class="time">
                         <span class="jours">Jours</span>
@@ -110,7 +110,7 @@
         </div>
 
         <div class="row-dashboard">
-            <div class='column'>
+            <div class='grid-14'>
                 <div class='stat'>
                     <canvas id="myChart" width="1200px" height="170px"></canvas>
                     <script src="./public/js/chartdashboard.js"></script>
@@ -124,7 +124,7 @@
         </div>
 
         <div class="row-dashboard">
-            <div class='column'>
+            <div class='grid-4'>
                 <div class='box'>
                     <h3 class="courses-rating">Courses rating</h3>
                     <div class="text center">
@@ -142,7 +142,7 @@
                     </div>
                 </div>
             </div>
-            <div class='column'>
+            <div class='grid-4'>
                 <div class='box'>
                     <h3 class="courses-rating">Pages rating</h3>
                     <div class="lm">
@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class='column'>
+            <div class='grid-4'>
                 <div class='box'>
                     <h3 class="courses-rating">Anomalies</h3>
                     <div class="cercle-ano">
