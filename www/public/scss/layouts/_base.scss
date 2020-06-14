@@ -73,7 +73,7 @@ footer {
 }
 
 /* ---------------------------------------------------------------------------- */
-                                /* COLUMN SIZE */
+                                /* GRID */
 /* ---------------------------------------------------------------------------- */
 
 @for $i from 1 through 14 {
@@ -81,43 +81,6 @@ footer {
     width: 100px*$i;
   }
 }
-
-.col-md-12 {
-    position: relative;
-    width: 100%;
-    padding-right: 1em;
-    padding-left: 1em;
-}
-
-.col-md-8 {
-  position: relative;
-  width: 100%;
-  min-height: 1px;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-.col-md-6 {
-  position: relative;
-  width: 100%;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-.col-md-4 {
-  position: relative;
-  width: 100%;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-.col-md-2 {
-  position: relative;
-  width: 100%;
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
 
 /* ---------------------------------------------------------------------------- */
                                     /* NAVBAR */
