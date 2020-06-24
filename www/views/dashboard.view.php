@@ -112,7 +112,7 @@
         <div class="row-10">
             <div class='grid-14'>
                 <div class='stat'>
-                    <canvas id="myChart" width="1200px" height="170px"></canvas>
+                    <canvas id="myChart" width="1180px" height="170px"></canvas>
                     <script src="./public/js/chartdashboard.js"></script>
                     <div class="count">
                         <span class="count-visiteur">Visiteurs : 352 </span>
