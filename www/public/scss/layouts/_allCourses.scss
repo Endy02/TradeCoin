@@ -1,0 +1,17 @@
+.p-center:before, .p-center:after {
+  content:'';
+  display:inline-block;
+  vertical-align: middle;
+  width: 30rem; height: 1px;
+  background: #000;
+}
+.p-center:before {
+  margin-right: 1rem
+}
+.p-center:after {
+  margin-left: 1rem
+}
+
+.p-center {
+  text-align: center;
+}

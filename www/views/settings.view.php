@@ -10,7 +10,7 @@
 
     <title>Settings</title>
 </head>
-<body class="body-dashboard">
+<body class="body-back">
 
 <header class="header-dashboard">
 

@@ -8,7 +8,7 @@
     <script src="https://kit.fontawesome.com/565e332a46.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
 
-    <title>Dashboard</title>
+    <title>Courses</title>
 </head>
 <body class="body-dashboard">
 
@@ -30,6 +30,122 @@
     </nav>
 
 </header>
+
+<div class="container-dashboard">
+
+    <div class='some-page-wrapper'>
+
+        <h1>All courses</h1>
+
+        <div class="row-10">
+
+            <div class='grid-4'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-4'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-4'>
+                <div class='box'>
+
+                </div>
+            </div>
+        </div>
+
+        <p class="p-center">Débutant</p>
+
+        <div class="row-10">
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+        </div>
+
+        <p class="p-center">Intermédiaire</p>
+
+        <div class="row-10">
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+        </div>
+
+        <p class="p-center">Avancée</p>
+
+        <div class="row-10">
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+
+            <div class='grid-3'>
+                <div class='box'>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
 
 
 <script src="./dist/bundle.js"></script>
